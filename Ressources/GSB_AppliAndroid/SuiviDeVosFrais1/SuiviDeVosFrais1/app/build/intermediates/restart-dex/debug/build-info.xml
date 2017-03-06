@@ -1,37 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
-    api-level="17"
-    density="hdpi"
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="25"
+    density="xxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="1823143780383953"
-    token="2191418046295859968"
-    verifier="FULL_BUILD_REQUESTED" >
+    timestamp="2929869044741263"
+    token="-6296738351065626761"
+    verifier="INITIAL_BUILD" >
 
     <task
         name="javac"
-        duration="1178" />
+        duration="235" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="1154" />
+        duration="187" />
     <task
         name="verifier"
-        duration="53" />
+        duration="47" />
 
     <artifact
-        location="C:\StudioProjects\SuiviDeVosFrais1\app\build\outputs\apk\app-debug.apk"
-        type="MAIN" />
+        location="C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\build\intermediates\split-apk\debug\dependencies_62c93d52aebd79ae44722720fd93babe7b7fdb8b.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\build\intermediates\split-apk\debug\slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\build\intermediates\split-apk\debug\slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\build\intermediates\split-apk\debug\slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\build\intermediates\split-apk\debug\slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\build\intermediates\split-apk\debug\slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\build\intermediates\split-apk\debug\slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\build\intermediates\split-apk\debug\slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\build\intermediates\split-apk\debug\slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\build\intermediates\split-apk\debug\slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\build\intermediates\split-apk\debug\slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\build\outputs\apk\app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
-        timestamp="1823143780383953"
-        verifier="FULL_BUILD_REQUESTED" >
+        timestamp="2929869044741263"
+        verifier="INITIAL_BUILD" >
         <artifact
-            location="C:\StudioProjects\SuiviDeVosFrais1\app\build\outputs\apk\app-debug.apk"
-            type="MAIN" />
+            location="C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\build\intermediates\split-apk\debug\dependencies_62c93d52aebd79ae44722720fd93babe7b7fdb8b.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\build\intermediates\split-apk\debug\slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\build\intermediates\split-apk\debug\slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\build\intermediates\split-apk\debug\slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\build\intermediates\split-apk\debug\slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\build\intermediates\split-apk\debug\slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\build\intermediates\split-apk\debug\slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\build\intermediates\split-apk\debug\slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\build\intermediates\split-apk\debug\slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\build\intermediates\split-apk\debug\slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\build\intermediates\split-apk\debug\slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\build\outputs\apk\app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>

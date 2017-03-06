@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "C:\\xampp\\htdocs\\GSB-GestionFrais\\Ressources\\GSB_AppliAndroid\\SuiviDeVosFrais1\\SuiviDeVosFrais1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\frais_hf.png",
+        "source": "C:\\xampp\\htdocs\\GSB-GestionFrais\\Ressources\\GSB_AppliAndroid\\SuiviDeVosFrais1\\SuiviDeVosFrais1\\app\\src\\main\\res\\drawable-hdpi\\frais_hf.png"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\GSB-GestionFrais\\Ressources\\GSB_AppliAndroid\\SuiviDeVosFrais1\\SuiviDeVosFrais1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\suppr.png",
+        "source": "C:\\xampp\\htdocs\\GSB-GestionFrais\\Ressources\\GSB_AppliAndroid\\SuiviDeVosFrais1\\SuiviDeVosFrais1\\app\\src\\main\\res\\drawable-hdpi\\suppr.png"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\GSB-GestionFrais\\Ressources\\GSB_AppliAndroid\\SuiviDeVosFrais1\\SuiviDeVosFrais1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "C:\\xampp\\htdocs\\GSB-GestionFrais\\Ressources\\GSB_AppliAndroid\\SuiviDeVosFrais1\\SuiviDeVosFrais1\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\GSB-GestionFrais\\Ressources\\GSB_AppliAndroid\\SuiviDeVosFrais1\\SuiviDeVosFrais1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\logogsb.png",
+        "source": "C:\\xampp\\htdocs\\GSB-GestionFrais\\Ressources\\GSB_AppliAndroid\\SuiviDeVosFrais1\\SuiviDeVosFrais1\\app\\src\\main\\res\\drawable-hdpi\\logogsb.png"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\GSB-GestionFrais\\Ressources\\GSB_AppliAndroid\\SuiviDeVosFrais1\\SuiviDeVosFrais1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\frais_nuitee.png",
+        "source": "C:\\xampp\\htdocs\\GSB-GestionFrais\\Ressources\\GSB_AppliAndroid\\SuiviDeVosFrais1\\SuiviDeVosFrais1\\app\\src\\main\\res\\drawable-hdpi\\frais_nuitee.png"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\GSB-GestionFrais\\Ressources\\GSB_AppliAndroid\\SuiviDeVosFrais1\\SuiviDeVosFrais1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\frais_repas.png",
+        "source": "C:\\xampp\\htdocs\\GSB-GestionFrais\\Ressources\\GSB_AppliAndroid\\SuiviDeVosFrais1\\SuiviDeVosFrais1\\app\\src\\main\\res\\drawable-hdpi\\frais_repas.png"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\GSB-GestionFrais\\Ressources\\GSB_AppliAndroid\\SuiviDeVosFrais1\\SuiviDeVosFrais1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\transfert.png",
+        "source": "C:\\xampp\\htdocs\\GSB-GestionFrais\\Ressources\\GSB_AppliAndroid\\SuiviDeVosFrais1\\SuiviDeVosFrais1\\app\\src\\main\\res\\drawable-hdpi\\transfert.png"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\GSB-GestionFrais\\Ressources\\GSB_AppliAndroid\\SuiviDeVosFrais1\\SuiviDeVosFrais1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\frais_km.png",
+        "source": "C:\\xampp\\htdocs\\GSB-GestionFrais\\Ressources\\GSB_AppliAndroid\\SuiviDeVosFrais1\\SuiviDeVosFrais1\\app\\src\\main\\res\\drawable-hdpi\\frais_km.png"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\GSB-GestionFrais\\Ressources\\GSB_AppliAndroid\\SuiviDeVosFrais1\\SuiviDeVosFrais1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\frais_etape.png",
+        "source": "C:\\xampp\\htdocs\\GSB-GestionFrais\\Ressources\\GSB_AppliAndroid\\SuiviDeVosFrais1\\SuiviDeVosFrais1\\app\\src\\main\\res\\drawable-hdpi\\frais_etape.png"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\GSB-GestionFrais\\Ressources\\GSB_AppliAndroid\\SuiviDeVosFrais1\\SuiviDeVosFrais1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\frais_hf_recap.png",
+        "source": "C:\\xampp\\htdocs\\GSB-GestionFrais\\Ressources\\GSB_AppliAndroid\\SuiviDeVosFrais1\\SuiviDeVosFrais1\\app\\src\\main\\res\\drawable-hdpi\\frais_hf_recap.png"
+    }
+]

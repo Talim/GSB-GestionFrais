@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.BaseAdapter;
 
@@ -64,24 +66,44 @@ public class FraisHfAdapter extends BaseAdapter {
 		TextView txtListJour ;
 		TextView txtListMontant ;
 		TextView txtListMotif ;
+		ImageButton imgBtnClose;
 	}
+
 	
 	/**
 	 * Affichage dans la liste
 	 */
 	@Override
-	public View getView(int index, View convertView, ViewGroup parent) {
+	public View getView(final int index, View convertView, ViewGroup parent) {
 		ViewHolder holder ;
+
 		if (convertView == null) {
 			holder = new ViewHolder() ;
+
 			convertView = inflater.inflate(R.layout.layout_liste, parent, false) ;
 			holder.txtListJour = (TextView)convertView.findViewById(R.id.txtListJour) ;
 			holder.txtListMontant = (TextView)convertView.findViewById(R.id.txtListMontant) ;
 			holder.txtListMotif = (TextView)convertView.findViewById(R.id.txtListMotif) ;
+
+			holder.imgBtnClose = (ImageButton) convertView.findViewById(R.id.imgBtn_close);
 			convertView.setTag(holder) ;
 		}else{
 			holder = (ViewHolder)convertView.getTag();
 		}
+
+		holder.imgBtnClose.setOnClickListener(
+				new OnClickListener() {
+					@Override
+					public void onClick(View v) {
+						lesFrais.remove(index);
+						Global.listFraisMois.get(key).supprFraisHf(index);
+						Serializer.serialize(Global.filename, Global.listFraisMois, context);
+						notifyDataSetChanged();
+					}
+				}
+		);
+
+
 		holder.txtListJour.setText(String.format(Locale.FRANCE, "%d", lesFrais.get(index).getJour())) ;
 		holder.txtListMontant.setText(String.format(Locale.FRANCE, "%d", lesFrais.get(index).getMontant())) ;
 		holder.txtListMotif.setText(lesFrais.get(index).getMotif()) ;

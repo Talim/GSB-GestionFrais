@@ -10,7 +10,7 @@ int drawable ic_launcher 0x7f020006
 int drawable logogsb 0x7f020007
 int drawable suppr 0x7f020008
 int drawable transfert 0x7f020009
-int id action_settings 0x7f08001c
+int id action_settings 0x7f08001d
 int id cmdEtape 0x7f080013
 int id cmdHf 0x7f080014
 int id cmdHfAjouter 0x7f080005
@@ -25,6 +25,7 @@ int id cmdTransfert 0x7f080016
 int id datHf 0x7f080001
 int id datHfRecap 0x7f080007
 int id datKm 0x7f08000a
+int id imgBtn_close 0x7f08001c
 int id imgHfRecapReturn 0x7f080006
 int id imgHfReturn 0x7f080000
 int id imgKmReturn 0x7f080009

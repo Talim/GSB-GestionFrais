@@ -27,7 +27,7 @@ public final class R {
         public static final int transfert=0x7f020009;
     }
     public static final class id {
-        public static final int action_settings=0x7f08001c;
+        public static final int action_settings=0x7f08001d;
         public static final int cmdEtape=0x7f080013;
         public static final int cmdHf=0x7f080014;
         public static final int cmdHfAjouter=0x7f080005;
@@ -42,6 +42,7 @@ public final class R {
         public static final int datHf=0x7f080001;
         public static final int datHfRecap=0x7f080007;
         public static final int datKm=0x7f08000a;
+        public static final int imgBtn_close=0x7f08001c;
         public static final int imgHfRecapReturn=0x7f080006;
         public static final int imgHfReturn=0x7f080000;
         public static final int imgKmReturn=0x7f080009;
