@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\build\\intermediates\\res\\merged\\debug\\menu\\layout_liste.xml",
+        "source": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\src\\main\\res\\menu\\layout_liste.xml"
+    },
+    {
+        "merged": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\build\\intermediates\\res\\merged\\debug\\menu\\repas.xml",
+        "source": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\src\\main\\res\\menu\\repas.xml"
+    },
+    {
+        "merged": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\build\\intermediates\\res\\merged\\debug\\menu\\hf_recap.xml",
+        "source": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\src\\main\\res\\menu\\hf_recap.xml"
+    },
+    {
+        "merged": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\build\\intermediates\\res\\merged\\debug\\menu\\etape.xml",
+        "source": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\src\\main\\res\\menu\\etape.xml"
+    },
+    {
+        "merged": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\build\\intermediates\\res\\merged\\debug\\menu\\hf.xml",
+        "source": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\src\\main\\res\\menu\\hf.xml"
+    },
+    {
+        "merged": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\build\\intermediates\\res\\merged\\debug\\menu\\frais_km.xml",
+        "source": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\src\\main\\res\\menu\\frais_km.xml"
+    },
+    {
+        "merged": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\build\\intermediates\\res\\merged\\debug\\menu\\nuitee.xml",
+        "source": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\src\\main\\res\\menu\\nuitee.xml"
+    },
+    {
+        "merged": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\src\\main\\res\\menu\\main.xml"
+    }
+]

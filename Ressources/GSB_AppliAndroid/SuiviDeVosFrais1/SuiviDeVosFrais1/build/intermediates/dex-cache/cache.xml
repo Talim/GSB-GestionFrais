@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\StudioProjects\SuiviDeVosFrais1\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="C:\StudioProjects\SuiviDeVosFrais1\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.1.0_41351007fac0a9295d682265717abfee1d8f70e6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\StudioProjects\SuiviDeVosFrais1\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="C:\StudioProjects\SuiviDeVosFrais1\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.1.0_24b64a6a5afdb3f7f52dd73812bf068e7dc09e43.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\StudioProjects\SuiviDeVosFrais1\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="C:\StudioProjects\SuiviDeVosFrais1\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.1.0_ec8a42dcc931fe11ff4a91d56eb5b150ab306438.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\StudioProjects\SuiviDeVosFrais1\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="C:\StudioProjects\SuiviDeVosFrais1\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.1.0_a8768653151e9da69c776f8c17fd78467e4c5118.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="H:\AVD\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="C:\StudioProjects\SuiviDeVosFrais1\app\build\intermediates\pre-dexed\debug\support-annotations-25.1.0_bef6295d2acc9c96e2c4cf20afddff5ff7722a58.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\StudioProjects\SuiviDeVosFrais1\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d86db83b5f11713c3c22b6476a17ecc83b5160d7">
+        <dex dex="C:\StudioProjects\SuiviDeVosFrais1\app\build\intermediates\pre-dexed\debug\instant-run_c4d3b4c2124fed937508f89a95e70063e6b9f322.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\StudioProjects\SuiviDeVosFrais1\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="923cc76aeab27276e3019534fee3fca41bac6ceb">
+        <dex dex="C:\StudioProjects\SuiviDeVosFrais1\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_efe892fe787108cb035084563c26da978d35dcdf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\StudioProjects\SuiviDeVosFrais1\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="C:\StudioProjects\SuiviDeVosFrais1\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.1.0_4d63128b6b046b8453cd6531faef9625f6b81970.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\StudioProjects\SuiviDeVosFrais1\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\StudioProjects\SuiviDeVosFrais1\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.1.0_39d2f1a45b5bddfd8ba15c6c1e9bea8ff2a91019.jar" />
+    </item>
+
+</items>

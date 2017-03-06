@@ -1,0 +1,91 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:3:1-44:12
+	package
+		ADDED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:4:5-38
+		INJECTED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:6:5-30
+		INJECTED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml
+	android:versionCode
+		ADDED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:5:5-28
+		INJECTED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:3:11-69
+uses-sdk
+ADDED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:support-v4:25.1.0] C:\StudioProjects\SuiviDeVosFrais1\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.1.0] C:\StudioProjects\SuiviDeVosFrais1\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.1.0] C:\StudioProjects\SuiviDeVosFrais1\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.1.0] C:\StudioProjects\SuiviDeVosFrais1\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.1.0] C:\StudioProjects\SuiviDeVosFrais1\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.1.0] C:\StudioProjects\SuiviDeVosFrais1\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:25.1.0] C:\StudioProjects\SuiviDeVosFrais1\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\AndroidManifest.xml:23:9-51
+	android:targetSdkVersion
+		ADDED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:10:9-38
+		INJECTED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:9:9-35
+		INJECTED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml
+application
+ADDED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:12:5-42:19
+MERGED from [com.android.support:support-v4:25.1.0] C:\StudioProjects\SuiviDeVosFrais1\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.1.0] C:\StudioProjects\SuiviDeVosFrais1\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.1.0] C:\StudioProjects\SuiviDeVosFrais1\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.1.0] C:\StudioProjects\SuiviDeVosFrais1\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.1.0] C:\StudioProjects\SuiviDeVosFrais1\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.1.0] C:\StudioProjects\SuiviDeVosFrais1\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\AndroidManifest.xml:25:5-20
+	android:label
+		ADDED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:15:9-41
+	android:allowBackup
+		ADDED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:13:9-35
+	android:icon
+		ADDED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:14:9-45
+	android:theme
+		ADDED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:16:9-40
+activity#com.gsb.suividevosfrais.MainActivity
+ADDED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:17:9-25:20
+	android:label
+		ADDED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:19:13-45
+	android:name
+		ADDED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:18:13-64
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:20:13-24:29
+action#android.intent.action.MAIN
+ADDED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:21:17-69
+	android:name
+		ADDED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:21:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:23:17-77
+	android:name
+		ADDED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:23:27-74
+activity#com.gsb.suividevosfrais.KmActivity
+ADDED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:26:9-29:20
+	android:label
+		ADDED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:28:13-60
+	android:name
+		ADDED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:27:13-62
+activity#com.gsb.suividevosfrais.HfActivity
+ADDED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:30:9-33:20
+	android:label
+		ADDED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:32:13-54
+	android:name
+		ADDED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:31:13-62
+activity#com.gsb.suividevosfrais.HfRecapActivity
+ADDED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:34:9-37:20
+	android:label
+		ADDED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:36:13-60
+	android:name
+		ADDED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:35:13-67
+activity#com.gsb.suividevosfrais.LayoutListe
+ADDED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:38:9-41:20
+	android:label
+		ADDED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:40:13-64
+	android:name
+		ADDED from C:\StudioProjects\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:39:13-63

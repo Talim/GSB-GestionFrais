@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher.png",
+        "source": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\frais_km.png",
+        "source": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\src\\main\\res\\drawable-hdpi\\frais_km.png"
+    },
+    {
+        "merged": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\frais_nuitee.png",
+        "source": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\src\\main\\res\\drawable-hdpi\\frais_nuitee.png"
+    },
+    {
+        "merged": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\logogsb.png",
+        "source": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\src\\main\\res\\drawable-hdpi\\logogsb.png"
+    },
+    {
+        "merged": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\suppr.png",
+        "source": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\src\\main\\res\\drawable-hdpi\\suppr.png"
+    },
+    {
+        "merged": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\frais_hf_recap.png",
+        "source": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\src\\main\\res\\drawable-hdpi\\frais_hf_recap.png"
+    },
+    {
+        "merged": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\frais_hf.png",
+        "source": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\src\\main\\res\\drawable-hdpi\\frais_hf.png"
+    },
+    {
+        "merged": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\frais_etape.png",
+        "source": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\src\\main\\res\\drawable-hdpi\\frais_etape.png"
+    },
+    {
+        "merged": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\transfert.png",
+        "source": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\src\\main\\res\\drawable-hdpi\\transfert.png"
+    },
+    {
+        "merged": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\frais_repas.png",
+        "source": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\src\\main\\res\\drawable-hdpi\\frais_repas.png"
+    }
+]

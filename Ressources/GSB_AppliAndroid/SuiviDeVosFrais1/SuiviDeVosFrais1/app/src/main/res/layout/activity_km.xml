@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KmActivity" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        tools:ignore="RtlHardcoded,UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/imgKmReturn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/frais_km"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingTop="20dp" >
+
+            <DatePicker
+                android:id="@+id/datKm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            tools:ignore="DisableBaselineAlignment">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                tools:ignore="NestedWeights,RtlSymmetry">
+
+                <TextView
+                    android:id="@+id/lblKm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Km"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:paddingRight="10dp"
+                tools:ignore="RtlSymmetry">
+
+                <EditText
+                    android:id="@+id/txtKm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:inputType="number"
+                    tools:ignore="InefficientWeight">
+
+                    <requestFocus />
+                </EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"
+                tools:ignore="RtlSymmetry">
+
+                <Button
+                    android:id="@+id/cmdKmPlus"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:text="+"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/cmdKmMoins"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:text="-"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="20dp" >
+
+            <Button
+                android:id="@+id/cmdKmValider"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Valider"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
