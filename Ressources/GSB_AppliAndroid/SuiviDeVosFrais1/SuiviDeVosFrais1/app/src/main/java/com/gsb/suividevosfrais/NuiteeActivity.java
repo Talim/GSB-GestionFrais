@@ -1,19 +1,19 @@
 package com.gsb.suividevosfrais;
 
-import android.os.Bundle;
 import android.app.Activity;
-import android.widget.DatePicker.OnDateChangedListener;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.DatePicker.OnDateChangedListener;
 import android.widget.EditText;
 import android.widget.ImageView;
 
 import java.util.Locale;
 
-public class RepasActivity extends Activity {
+public class NuiteeActivity extends Activity {
 
     // informations affichées dans l'activité
     private Integer annee ;
@@ -23,9 +23,9 @@ public class RepasActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_repas);
+        setContentView(R.layout.activity_nuitee);
         // modification de l'affichage du DatePicker
-        Global.changeAfficheDate((DatePicker) findViewById(R.id.datRepas)) ;
+        Global.changeAfficheDate((DatePicker) findViewById(R.id.datNuitee)) ;
         // valorisation des propriétés
         valoriseProprietes() ;
         // chargement des méthodes événementielles
@@ -39,7 +39,7 @@ public class RepasActivity extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.frais_repas, menu);
+        getMenuInflater().inflate(R.menu.frais_nuitee, menu);
         return true;
     }
 
@@ -47,23 +47,23 @@ public class RepasActivity extends Activity {
      * Valorisation des propriétés avec les informations affichées
      */
     private void valoriseProprietes() {
-        annee = ((DatePicker)findViewById(R.id.datRepas)).getYear() ;
-        mois = ((DatePicker)findViewById(R.id.datRepas)).getMonth() + 1 ;
+        annee = ((DatePicker)findViewById(R.id.datNuitee)).getYear() ;
+        mois = ((DatePicker)findViewById(R.id.datNuitee)).getMonth() + 1 ;
         // récupération de la qte correspondant au mois actuel
         qte = 0 ;
         Integer key = annee*100+mois ;
         if (Global.listFraisMois.containsKey(key)) {
-            qte = Global.listFraisMois.get(key).getRepas() ;
+            qte = Global.listFraisMois.get(key).getNuitee() ;
         }
-        ((EditText)findViewById(R.id.txtRepas)).setEnabled(false);
-        ((EditText)findViewById(R.id.txtRepas)).setText(String.format(Locale.FRANCE, "%d", qte)) ;
+        ((EditText)findViewById(R.id.txtNuitee)).setEnabled(false);
+        ((EditText)findViewById(R.id.txtNuitee)).setText(String.format(Locale.FRANCE, "%d", qte)) ;
     }
 
     /**
      * Sur la selection de l'image : retour au menu principal
      */
     private void imgReturn_clic() {
-        ((ImageView)findViewById(R.id.imgRepasReturn)).setOnClickListener(new ImageView.OnClickListener() {
+        ((ImageView)findViewById(R.id.imgNuiteeReturn)).setOnClickListener(new ImageView.OnClickListener() {
             public void onClick(View v) {
                 retourActivityPrincipale() ;
             }
@@ -74,9 +74,9 @@ public class RepasActivity extends Activity {
      * Sur le clic du bouton valider : sérialisation
      */
     private void cmdValider_clic() {
-        ((Button)findViewById(R.id.cmdRepasValider)).setOnClickListener(new Button.OnClickListener() {
+        ((Button)findViewById(R.id.cmdNuiteeValider)).setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
-                Serializer.serialize(Global.filename, Global.listFraisMois, RepasActivity.this) ;
+                Serializer.serialize(Global.filename, Global.listFraisMois, NuiteeActivity.this) ;
                 retourActivityPrincipale() ;
             }
         }) ;
@@ -86,7 +86,7 @@ public class RepasActivity extends Activity {
      * Sur le clic du bouton plus : ajout de 10 dans la quantité
      */
     private void cmdPlus_clic() {
-        ((Button)findViewById(R.id.cmdRepasPlus)).setOnClickListener(new Button.OnClickListener() {
+        ((Button)findViewById(R.id.cmdNuiteePlus)).setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
                 qte+=1 ;
                 enregNewQte() ;
@@ -98,7 +98,7 @@ public class RepasActivity extends Activity {
      * Sur le clic du bouton moins : enlève 10 dans la quantité si c'est possible
      */
     private void cmdMoins_clic() {
-        ((Button)findViewById(R.id.cmdRepasMoins)).setOnClickListener(new Button.OnClickListener() {
+        ((Button)findViewById(R.id.cmdNuiteeMoins)).setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
                 qte = Math.max(0, qte-1) ; // suppression de 10 si possible
                 enregNewQte() ;
@@ -110,7 +110,7 @@ public class RepasActivity extends Activity {
      * Sur le changement de date : mise à jour de l'affichage de la qte
      */
     private void dat_clic() {
-        final DatePicker uneDate = (DatePicker)findViewById(R.id.datRepas) ;
+        final DatePicker uneDate = (DatePicker)findViewById(R.id.datNuitee) ;
         uneDate.init(uneDate.getYear(), uneDate.getMonth(), uneDate.getDayOfMonth(), new OnDateChangedListener(){
             @Override
             public void onDateChanged(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
@@ -124,21 +124,21 @@ public class RepasActivity extends Activity {
      */
     private void enregNewQte() {
         // enregistrement dans la zone de texte
-        ((EditText)findViewById(R.id.txtRepas)).setText(String.format(Locale.FRANCE, "%d", qte)) ;
+        ((EditText)findViewById(R.id.txtNuitee)).setText(String.format(Locale.FRANCE, "%d", qte)) ;
         // enregistrement dans la liste
         Integer key = annee*100+mois ;
         if (!Global.listFraisMois.containsKey(key)) {
             // creation du mois et de l'annee s'ils n'existent pas déjà
             Global.listFraisMois.put(key, new FraisMois(annee, mois)) ;
         }
-        Global.listFraisMois.get(key).setRepas(qte); ;
+        Global.listFraisMois.get(key).setNuitee(qte); ;
     }
 
     /**
      * Retour à l'activité principale (le menu)
      */
     private void retourActivityPrincipale() {
-        Intent intent = new Intent(RepasActivity.this, MainActivity.class) ;
+        Intent intent = new Intent(NuiteeActivity.this, MainActivity.class) ;
         startActivity(intent) ;
     }
 }

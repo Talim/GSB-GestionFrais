@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:3:1-48:12
+ADDED from C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:3:1-52:12
 	package
 		ADDED from C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:4:5-38
 		INJECTED from C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml
@@ -44,7 +44,7 @@ MERGED from [com.android.support:support-compat:25.1.0] C:\xampp\htdocs\GSB-Gest
 		INJECTED from C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml
 		INJECTED from C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml
 application
-ADDED from C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:12:5-46:19
+ADDED from C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:12:5-50:19
 MERGED from [com.android.support:support-v4:25.1.0] C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:25.1.0] C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-media-compat:25.1.0] C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\AndroidManifest.xml:25:5-20
@@ -97,21 +97,27 @@ ADDED from C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeV
 		ADDED from C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:32:13-57
 	android:name
 		ADDED from C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:31:13-65
-activity#com.gsb.suividevosfrais.HfActivity
+activity#com.gsb.suividevosfrais.NuiteeActivity
 ADDED from C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:34:9-37:20
 	android:label
-		ADDED from C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:36:13-54
+		ADDED from C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:36:13-58
 	android:name
-		ADDED from C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:35:13-62
-activity#com.gsb.suividevosfrais.HfRecapActivity
+		ADDED from C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:35:13-66
+activity#com.gsb.suividevosfrais.HfActivity
 ADDED from C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:38:9-41:20
 	android:label
-		ADDED from C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:40:13-60
+		ADDED from C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:40:13-54
 	android:name
-		ADDED from C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:39:13-67
-activity#com.gsb.suividevosfrais.LayoutListe
+		ADDED from C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:39:13-62
+activity#com.gsb.suividevosfrais.HfRecapActivity
 ADDED from C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:42:9-45:20
 	android:label
-		ADDED from C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:44:13-64
+		ADDED from C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:44:13-60
 	android:name
-		ADDED from C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:43:13-63
+		ADDED from C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:43:13-67
+activity#com.gsb.suividevosfrais.LayoutListe
+ADDED from C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:46:9-49:20
+	android:label
+		ADDED from C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:48:13-64
+	android:name
+		ADDED from C:\xampp\htdocs\GSB-GestionFrais\Ressources\GSB_AppliAndroid\SuiviDeVosFrais1\SuiviDeVosFrais1\app\src\main\AndroidManifest.xml:47:13-63

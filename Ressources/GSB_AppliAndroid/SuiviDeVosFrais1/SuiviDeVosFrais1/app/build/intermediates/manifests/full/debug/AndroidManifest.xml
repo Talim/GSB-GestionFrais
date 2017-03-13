@@ -32,6 +32,10 @@
             android:label="@string/title_activity_repas" >
         </activity>
         <activity
+            android:name="com.gsb.suividevosfrais.NuiteeActivity"
+            android:label="@string/title_activity_nuitee" >
+        </activity>
+        <activity
             android:name="com.gsb.suividevosfrais.HfActivity"
             android:label="@string/title_activity_hf" >
         </activity>
