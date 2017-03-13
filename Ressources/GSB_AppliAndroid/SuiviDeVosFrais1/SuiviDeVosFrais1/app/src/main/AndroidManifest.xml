@@ -28,6 +28,10 @@
             android:label="@string/title_activity_frais_km" >
         </activity>
         <activity
+            android:name="com.gsb.suividevosfrais.RepasActivity"
+            android:label="@string/title_activity_repas" >
+        </activity>
+        <activity
             android:name="com.gsb.suividevosfrais.HfActivity"
             android:label="@string/title_activity_hf" >
         </activity>

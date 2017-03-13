@@ -18,5 +18,9 @@
     {
         "merged": "C:\\xampp\\htdocs\\GSB-GestionFrais\\Ressources\\GSB_AppliAndroid\\SuiviDeVosFrais1\\SuiviDeVosFrais1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
         "source": "C:\\xampp\\htdocs\\GSB-GestionFrais\\Ressources\\GSB_AppliAndroid\\SuiviDeVosFrais1\\SuiviDeVosFrais1\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\xampp\\htdocs\\GSB-GestionFrais\\Ressources\\GSB_AppliAndroid\\SuiviDeVosFrais1\\SuiviDeVosFrais1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_repas.xml",
+        "source": "C:\\xampp\\htdocs\\GSB-GestionFrais\\Ressources\\GSB_AppliAndroid\\SuiviDeVosFrais1\\SuiviDeVosFrais1\\app\\src\\main\\res\\layout\\activity_repas.xml"
     }
 ]
