@@ -20,6 +20,10 @@
         "source": "C:\\xampp\\htdocs\\GSB-GestionFrais\\Ressources\\GSB_AppliAndroid\\SuiviDeVosFrais1\\SuiviDeVosFrais1\\app\\src\\main\\res\\menu\\hf.xml"
     },
     {
+        "merged": "C:\\xampp\\htdocs\\GSB-GestionFrais\\Ressources\\GSB_AppliAndroid\\SuiviDeVosFrais1\\SuiviDeVosFrais1\\app\\build\\intermediates\\res\\merged\\debug\\menu\\frais_etape.xml",
+        "source": "C:\\xampp\\htdocs\\GSB-GestionFrais\\Ressources\\GSB_AppliAndroid\\SuiviDeVosFrais1\\SuiviDeVosFrais1\\app\\src\\main\\res\\menu\\frais_etape.xml"
+    },
+    {
         "merged": "C:\\xampp\\htdocs\\GSB-GestionFrais\\Ressources\\GSB_AppliAndroid\\SuiviDeVosFrais1\\SuiviDeVosFrais1\\app\\build\\intermediates\\res\\merged\\debug\\menu\\layout_liste.xml",
         "source": "C:\\xampp\\htdocs\\GSB-GestionFrais\\Ressources\\GSB_AppliAndroid\\SuiviDeVosFrais1\\SuiviDeVosFrais1\\app\\src\\main\\res\\menu\\layout_liste.xml"
     },

@@ -31,6 +31,7 @@ public class MainActivity extends Activity {
         cmdMenu_clic(((Button)findViewById(R.id.cmdKm)), KmActivity.class) ;
         cmdMenu_clic(((Button)findViewById(R.id.cmdRepas)), RepasActivity.class) ;
         cmdMenu_clic(((Button)findViewById(R.id.cmdNuitee)), NuiteeActivity.class) ;
+        cmdMenu_clic(((Button)findViewById(R.id.cmdEtape)), EtapeActivity.class) ;
         cmdMenu_clic(((Button)findViewById(R.id.cmdHf)), HfActivity.class) ;
         cmdMenu_clic(((Button)findViewById(R.id.cmdHfRecap)), HfRecapActivity.class) ;
         cmdTransfert_clic() ;
