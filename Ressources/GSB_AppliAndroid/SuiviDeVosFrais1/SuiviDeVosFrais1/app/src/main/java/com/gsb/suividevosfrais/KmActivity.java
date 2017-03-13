@@ -55,6 +55,7 @@ public class KmActivity extends Activity {
 		if (Global.listFraisMois.containsKey(key)) {
 			qte = Global.listFraisMois.get(key).getKm() ;
 		}
+		((EditText)findViewById(R.id.txtKm)).setEnabled(false);
 		((EditText)findViewById(R.id.txtKm)).setText(String.format(Locale.FRANCE, "%d", qte)) ;
 	}
 	

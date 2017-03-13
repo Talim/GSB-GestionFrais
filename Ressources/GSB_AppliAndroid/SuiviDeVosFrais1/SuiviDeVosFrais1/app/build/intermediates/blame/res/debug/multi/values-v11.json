@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+        "outputFile": "C:\\xampp\\htdocs\\GSB-GestionFrais\\Ressources\\GSB_AppliAndroid\\SuiviDeVosFrais1\\SuiviDeVosFrais1\\app\\build\\intermediates\\res\\merged\\debug\\values-v11\\values-v11.xml",
         "map": [
             {
                 "to": {
@@ -12,7 +12,33 @@
                     "endOffset": 182
                 },
                 "from": {
-                    "file": "C:\\StudioProjects\\SuiviDeVosFrais1\\app\\src\\main\\res\\values-v11\\styles.xml",
+                    "file": "C:\\xampp\\htdocs\\GSB-GestionFrais\\Ressources\\GSB_AppliAndroid\\SuiviDeVosFrais1\\SuiviDeVosFrais1\\app\\src\\main\\res\\values-v11\\styles.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 182,
+                        "endLine": 8,
+                        "endColumn": 12,
+                        "endOffset": 311
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "C:\\xampp\\htdocs\\GSB-GestionFrais\\Ressources\\GSB_AppliAndroid\\SuiviDeVosFrais1\\SuiviDeVosFrais1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 4,
+                    "endColumn": 12,
+                    "endOffset": 182
+                },
+                "from": {
+                    "file": "C:\\xampp\\htdocs\\GSB-GestionFrais\\Ressources\\GSB_AppliAndroid\\SuiviDeVosFrais1\\SuiviDeVosFrais1\\app\\src\\main\\res\\values-v11\\styles.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,

@@ -53,10 +53,16 @@
         android:id="@+id/txtListMotif"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        android:layout_weight="3.5"
+        android:layout_weight="2.78"
         android:paddingLeft="4dp"
         android:paddingRight="2dp"
         android:textSize="20sp"
         tools:ignore="RtlHardcoded" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgBtn_close"
+        android:src="@drawable/suppr" />
 
 </LinearLayout>
