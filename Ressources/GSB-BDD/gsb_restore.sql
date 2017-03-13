@@ -42402,3 +42402,11 @@ INSERT INTO `lignefraishorsforfait` (`id`, `idvisiteur`, `mois`, `libelle`, `dat
 (16350, 'f4', '201611', 'Achat de matériel de papèterie', '2016-11-25', '33.00'),
 (16351, 'f4', '201612', 'Location équipement vidéo/sonore', '2016-12-24', '427.00'),
 (16352, 'f4', '201612', 'Location véhicule', '2016-12-04', '86.00');
+
+
+UPDATE fichefrais AS f INNER JOIN (
+  SELECT idvisiteur, mois, count(*) AS nbJustifAMettre
+  FROM lignefraishorsforfait
+  GROUP BY idvisiteur, mois
+) AS l ON (f.idvisiteur = l.idvisiteur AND f.mois = l.mois)
+SET f.nbjustificatifs = l.nbJustifAMettre
