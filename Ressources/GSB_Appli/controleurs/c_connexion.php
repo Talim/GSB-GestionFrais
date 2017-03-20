@@ -20,6 +20,7 @@ switch ($action) {
                 $id = $visiteur['id'];
                 $nom = $visiteur['nom'];
                 $prenom = $visiteur['prenom'];
+                $_SESSION['user_type'] = $visiteur['type'];
                 connecter($id, $nom, $prenom);
                 header('Location: index.php');
             }

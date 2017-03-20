@@ -2,7 +2,11 @@
     <div class="col-md-6 col-md-offset-3">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">Identification utilisateur</h3>
+<<<<<<< HEAD
+                <h3 class="panel-title">Identification utilisateur </h3>
+=======
+                <h3 class="panel-title">Identification dddutilidddsateur </h3>
+>>>>>>> master
             </div>
             <div class="panel-body">
                 <form role="form" method="post" action="index.php?uc=connexion&action=valideConnexion">
