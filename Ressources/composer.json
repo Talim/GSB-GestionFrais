@@ -1,5 +1,9 @@
 {
     "require-dev": {
         "phpdocumentor/phpdocumentor": "^2.9"
+    },
+    "require": {
+        "dompdf/dompdf": "^0.8.0",
+        "mpdf/mpdf": "^6.1"
     }
 }

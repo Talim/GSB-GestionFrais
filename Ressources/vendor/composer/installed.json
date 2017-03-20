@@ -17,7 +17,7 @@
         "require-dev": {
             "zetacomponents/unit-test": "*"
         },
-        "time": "2014-09-19 03:28:34",
+        "time": "2014-09-19T03:28:34+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -85,7 +85,7 @@
         "require-dev": {
             "zetacomponents/unit-test": "dev-master"
         },
-        "time": "2013-12-19 11:40:00",
+        "time": "2013-12-19T11:40:00+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -153,7 +153,7 @@
             "zendframework/zend-serializer": "Zend\\Serializer component",
             "zendframework/zend-servicemanager": "To support hydrator plugin manager usage"
         },
-        "time": "2016-04-12 21:17:31",
+        "time": "2016-04-12T21:17:31+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -212,7 +212,7 @@
             "zendframework/zend-serializer": "^2.6.1, to use the SerializableStrategy",
             "zendframework/zend-servicemanager": "^2.7.5 || ^3.0.3, to support hydrator plugin manager usage"
         },
-        "time": "2016-02-18 22:38:26",
+        "time": "2016-02-18T22:38:26+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -256,7 +256,7 @@
         "require": {
             "php": ">=5.3.0"
         },
-        "time": "2017-02-14 16:28:37",
+        "time": "2017-02-14T16:28:37+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -307,7 +307,7 @@
         "require": {
             "psr/container": "^1.0"
         },
-        "time": "2017-02-14 19:40:03",
+        "time": "2017-02-14T19:40:03+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -352,7 +352,7 @@
             "ocramius/proxy-manager": "ProxyManager 0.5.* to handle lazy initialization of services",
             "zendframework/zend-di": "Zend\\Di component"
         },
-        "time": "2016-12-19 19:14:29",
+        "time": "2016-12-19T19:14:29+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -403,7 +403,7 @@
             "zendframework/zend-json-server": "For implementing JSON-RPC servers",
             "zendframework/zend-xml2json": "For converting XML documents to JSON"
         },
-        "time": "2016-04-01 02:34:00",
+        "time": "2016-04-01T02:34:00+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -458,7 +458,7 @@
             "zendframework/zend-math": "(^2.6 || ^3.0) To support Python Pickle serialization",
             "zendframework/zend-servicemanager": "(^2.7.5 || ^3.0.3) To support plugin manager support"
         },
-        "time": "2016-06-21 17:01:55",
+        "time": "2016-06-21T17:01:55+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -528,7 +528,7 @@
             "zendframework/zend-validator": "You should install this package to use the provided validators",
             "zendframework/zend-view": "You should install this package to use the provided view helpers"
         },
-        "time": "2016-06-07 21:08:30",
+        "time": "2016-06-07T21:08:30+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -589,7 +589,7 @@
             "zendframework/zend-servicemanager": "Zend\\ServiceManager component, for using the filter chain functionality",
             "zendframework/zend-uri": "Zend\\Uri component, for the UriNormalize filter"
         },
-        "time": "2016-04-18 18:32:43",
+        "time": "2016-04-18T18:32:43+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -651,7 +651,7 @@
             "zendframework/zend-json": "Zend\\Json to use the Json reader or writer classes",
             "zendframework/zend-servicemanager": "Zend\\ServiceManager for use with the Config Factory to retrieve reader and writer instances"
         },
-        "time": "2016-02-04 23:01:10",
+        "time": "2016-02-04T23:01:10+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -705,7 +705,7 @@
             "container-interop/container-interop": "^1.1.0, to use the lazy listeners feature",
             "zendframework/zend-stdlib": "^2.7.3 || ^3.0, to use the FilterChain feature"
         },
-        "time": "2016-12-19 21:47:12",
+        "time": "2016-12-19T21:47:12+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -774,7 +774,7 @@
             "zendframework/zend-serializer": "Zend\\Serializer component",
             "zendframework/zend-session": "Zend\\Session component"
         },
-        "time": "2016-12-16 11:35:47",
+        "time": "2016-12-16T11:35:47+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -826,7 +826,7 @@
             "symfony/debug": "~2.7",
             "symfony/phpunit-bridge": "~3.2"
         },
-        "time": "2017-02-27 00:07:03",
+        "time": "2017-02-27T00:07:03+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -888,7 +888,7 @@
         "suggest": {
             "ext-mbstring": "For best performance"
         },
-        "time": "2016-11-14 01:06:16",
+        "time": "2016-11-14T01:06:16+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -961,7 +961,7 @@
             "symfony/config": "",
             "symfony/yaml": ""
         },
-        "time": "2016-07-30 07:22:48",
+        "time": "2016-07-30T07:22:48+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1036,7 +1036,7 @@
             "symfony/property-access": "For using the 2.4 Validator API",
             "symfony/yaml": ""
         },
-        "time": "2017-02-28 02:24:56",
+        "time": "2017-02-28T02:24:56+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1087,7 +1087,7 @@
         "require": {
             "php": ">=5.3.9"
         },
-        "time": "2017-02-18 17:06:33",
+        "time": "2017-02-18T17:06:33+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1138,7 +1138,7 @@
         "require": {
             "php": ">=5.3.9"
         },
-        "time": "2017-03-04 12:20:59",
+        "time": "2017-03-04T12:20:59+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1200,7 +1200,7 @@
             "symfony/dependency-injection": "",
             "symfony/http-kernel": ""
         },
-        "time": "2017-02-21 08:33:48",
+        "time": "2017-02-21T08:33:48+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1251,7 +1251,7 @@
         "require": {
             "php": ">=5.3.0"
         },
-        "time": "2016-10-10 12:19:37",
+        "time": "2016-10-10T12:19:37+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1308,7 +1308,7 @@
             "symfony/class-loader": "~2.8|~3.0",
             "symfony/http-kernel": "~2.8|~3.0"
         },
-        "time": "2016-07-30 07:22:48",
+        "time": "2016-07-30T07:22:48+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1371,7 +1371,7 @@
             "symfony/event-dispatcher": "",
             "symfony/process": ""
         },
-        "time": "2017-03-04 11:00:12",
+        "time": "2017-03-04T11:00:12+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1422,7 +1422,7 @@
         "require": {
             "php": ">=5.5.9"
         },
-        "time": "2016-07-20 05:43:46",
+        "time": "2016-07-20T05:43:46+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1480,7 +1480,7 @@
         "suggest": {
             "symfony/yaml": "To use the yaml reference dumper"
         },
-        "time": "2017-03-01 18:13:50",
+        "time": "2017-03-01T18:13:50+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1538,7 +1538,7 @@
             "dflydev/markdown": "~1.0",
             "erusev/parsedown": "~1.0"
         },
-        "time": "2015-02-03 12:10:50",
+        "time": "2015-02-03T12:10:50+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1583,7 +1583,7 @@
             "ext-tokenizer": "*",
             "php": ">=5.3"
         },
-        "time": "2015-09-19 14:15:08",
+        "time": "2015-09-19T14:15:08+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1637,7 +1637,7 @@
             "mockery/mockery": "~0.8",
             "phpunit/phpunit": "~4.0"
         },
-        "time": "2016-05-21 08:42:32",
+        "time": "2016-05-21T08:42:32+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1688,7 +1688,7 @@
         "require-dev": {
             "phpunit/phpunit": "~4.0"
         },
-        "time": "2016-02-02 13:00:08",
+        "time": "2016-02-02T13:00:08+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -1728,7 +1728,7 @@
         "require": {
             "php": ">=5.3.9"
         },
-        "time": "2017-02-21 08:33:48",
+        "time": "2017-02-21T08:33:48+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1783,7 +1783,7 @@
         "require-dev": {
             "phpunit/phpunit": "~3.7"
         },
-        "time": "2013-08-06 21:07:42",
+        "time": "2013-08-06T21:07:42+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -1854,7 +1854,7 @@
             "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
             "sentry/sentry": "Allow sending log messages to a Sentry server"
         },
-        "time": "2016-11-26 00:15:39",
+        "time": "2016-11-26T00:15:39+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1911,7 +1911,7 @@
             "phpunit/phpunit": "~4.0",
             "squizlabs/php_codesniffer": "~2.0"
         },
-        "time": "2015-06-14 21:17:01",
+        "time": "2015-06-14T21:17:01+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1960,7 +1960,7 @@
         "require": {
             "php": ">=5.3.2"
         },
-        "time": "2014-09-09 13:34:57",
+        "time": "2014-09-09T13:34:57+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2021,7 +2021,7 @@
             "doctrine/cache": "1.*",
             "phpunit/phpunit": "^5.7"
         },
-        "time": "2017-02-24 16:22:25",
+        "time": "2017-02-24T16:22:25+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2089,7 +2089,7 @@
         "require-dev": {
             "phpunit/phpunit": "4.7.*"
         },
-        "time": "2015-07-25 16:39:46",
+        "time": "2015-07-25T16:39:46+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2138,7 +2138,7 @@
         "require": {
             "phpoption/phpoption": "1.*"
         },
-        "time": "2015-05-17 12:39:23",
+        "time": "2015-05-17T12:39:23+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2188,7 +2188,7 @@
         "require": {
             "phpoption/phpoption": ">=0.9,<2.0-dev"
         },
-        "time": "2012-11-18 18:08:43",
+        "time": "2012-11-18T18:08:43+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2229,7 +2229,7 @@
             "doctrine/cache": "~1.0",
             "symfony/cache": "~3.1"
         },
-        "time": "2016-12-05 10:18:33",
+        "time": "2016-12-05T10:18:33+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2305,7 +2305,7 @@
         "suggest": {
             "symfony/yaml": "Required if you'd like to serialize data to YAML format."
         },
-        "time": "2017-02-14 14:35:22",
+        "time": "2017-02-14T14:35:22+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2356,7 +2356,7 @@
         "require": {
             "php": ">=5.3.3"
         },
-        "time": "2012-08-16 17:13:03",
+        "time": "2012-08-16T17:13:03+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2401,7 +2401,7 @@
         "require": {
             "php": "^5.3 || ^7.0"
         },
-        "time": "2016-11-14 17:59:58",
+        "time": "2016-11-14T17:59:58+00:00",
         "bin": [
             "bin/jsonlint"
         ],
@@ -2454,7 +2454,7 @@
             "phpdocumentor/phpdocumentor": "~2",
             "phpunit/phpunit": "~3.7"
         },
-        "time": "2016-01-25 15:43:01",
+        "time": "2016-01-25T15:43:01+00:00",
         "bin": [
             "bin/validate-json"
         ],
@@ -2525,7 +2525,7 @@
             "mikey179/vfsstream": "1.1.0",
             "phpunit/phpunit": "3.7.*"
         },
-        "time": "2013-10-30 16:51:34",
+        "time": "2013-10-30T16:51:34+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2587,7 +2587,7 @@
             "mikey179/vfsstream": "1.1.0",
             "phpunit/phpunit": "3.7.*"
         },
-        "time": "2013-10-30 17:23:01",
+        "time": "2013-10-30T17:23:01+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2640,7 +2640,7 @@
         "require": {
             "php": ">=5.3.0"
         },
-        "time": "2016-11-02 15:56:58",
+        "time": "2016-11-02T15:56:58+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -2684,7 +2684,7 @@
         "require": {
             "php": ">=5.3.0"
         },
-        "time": "2013-11-22 08:30:29",
+        "time": "2013-11-22T08:30:29+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2738,7 +2738,7 @@
             "cilex/cilex": "1.*@dev",
             "silex/silex": "1.*@dev"
         },
-        "time": "2012-12-19 10:50:58",
+        "time": "2012-12-19T10:50:58+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2806,7 +2806,7 @@
             "symfony/validator": ">=1.0.0",
             "symfony/yaml": ">=1.0.0"
         },
-        "time": "2014-03-29 14:03:13",
+        "time": "2014-03-29T14:03:13+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2890,7 +2890,7 @@
             "ext-twig": "Enabling the twig extension improves the generation of twig based templates.",
             "ext-xslcache": "Enabling the XSLCache extension improves the generation of xml based templates."
         },
-        "time": "2016-05-22 09:50:56",
+        "time": "2016-05-22T09:50:56+00:00",
         "bin": [
             "bin/phpdoc.php",
             "bin/phpdoc"
@@ -2925,6 +2925,295 @@
             "dga",
             "documentation",
             "phpdoc"
+        ]
+    },
+    {
+        "name": "sabberworm/php-css-parser",
+        "version": "6.0.1",
+        "version_normalized": "6.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sabberworm/PHP-CSS-Parser.git",
+            "reference": "9ea4b00c569b19f731d0c2e0e802055877ff40c2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/sabberworm/PHP-CSS-Parser/zipball/9ea4b00c569b19f731d0c2e0e802055877ff40c2",
+            "reference": "9ea4b00c569b19f731d0c2e0e802055877ff40c2",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.2"
+        },
+        "time": "2015-08-24T08:48:52+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Sabberworm\\CSS": "lib/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Raphael Schweikert"
+            }
+        ],
+        "description": "Parser for CSS Files written in PHP",
+        "homepage": "http://www.sabberworm.com/blog/2010/6/10/php-css-parser",
+        "keywords": [
+            "css",
+            "parser",
+            "stylesheet"
+        ]
+    },
+    {
+        "name": "phenx/php-svg-lib",
+        "version": "v0.2",
+        "version_normalized": "0.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/PhenX/php-svg-lib.git",
+            "reference": "de291bec8449b89acfe85691b5c71434797959dc"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/PhenX/php-svg-lib/zipball/de291bec8449b89acfe85691b5c71434797959dc",
+            "reference": "de291bec8449b89acfe85691b5c71434797959dc",
+            "shasum": ""
+        },
+        "require": {
+            "sabberworm/php-css-parser": "6.0.*"
+        },
+        "time": "2016-12-13T20:25:45+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Svg\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPL-3.0"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Ménager",
+                "email": "fabien.menager@gmail.com"
+            }
+        ],
+        "description": "A library to read, parse and export to PDF SVG files.",
+        "homepage": "https://github.com/PhenX/php-svg-lib"
+    },
+    {
+        "name": "phenx/php-font-lib",
+        "version": "0.5",
+        "version_normalized": "0.5.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/PhenX/php-font-lib.git",
+            "reference": "19ad2bebc35be028fcc0221025fcbf3d436a3962"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/PhenX/php-font-lib/zipball/19ad2bebc35be028fcc0221025fcbf3d436a3962",
+            "reference": "19ad2bebc35be028fcc0221025fcbf3d436a3962",
+            "shasum": ""
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.8"
+        },
+        "time": "2017-02-11T10:58:43+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "FontLib\\": "src/FontLib"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPL-3.0"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Ménager",
+                "email": "fabien.menager@gmail.com"
+            }
+        ],
+        "description": "A library to read, parse, export and make subsets of different types of font files.",
+        "homepage": "https://github.com/PhenX/php-font-lib"
+    },
+    {
+        "name": "dompdf/dompdf",
+        "version": "v0.8.0",
+        "version_normalized": "0.8.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/dompdf/dompdf.git",
+            "reference": "0f418c6b58fdeafc2a0e80eb1fa5e644e185089c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/dompdf/dompdf/zipball/0f418c6b58fdeafc2a0e80eb1fa5e644e185089c",
+            "reference": "0f418c6b58fdeafc2a0e80eb1fa5e644e185089c",
+            "shasum": ""
+        },
+        "require": {
+            "ext-dom": "*",
+            "ext-gd": "*",
+            "ext-mbstring": "*",
+            "phenx/php-font-lib": "0.5.*",
+            "phenx/php-svg-lib": "0.2.*",
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "4.8.*",
+            "squizlabs/php_codesniffer": "2.*"
+        },
+        "time": "2017-02-16T02:40:40+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-develop": "0.7-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Dompdf\\": "src/"
+            },
+            "classmap": [
+                "lib/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPL-2.1"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Ménager",
+                "email": "fabien.menager@gmail.com"
+            },
+            {
+                "name": "Brian Sweeney",
+                "email": "eclecticgeek@gmail.com"
+            },
+            {
+                "name": "Gabriel Bull",
+                "email": "me@gabrielbull.com"
+            }
+        ],
+        "description": "DOMPDF is a CSS 2.1 compliant HTML to PDF converter",
+        "homepage": "https://github.com/dompdf/dompdf"
+    },
+    {
+        "name": "setasign/fpdi",
+        "version": "1.6.1",
+        "version_normalized": "1.6.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Setasign/FPDI.git",
+            "reference": "5b899b2b41463bf261aa69840fd30b50950a500c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Setasign/FPDI/zipball/5b899b2b41463bf261aa69840fd30b50950a500c",
+            "reference": "5b899b2b41463bf261aa69840fd30b50950a500c",
+            "shasum": ""
+        },
+        "suggest": {
+            "setasign/fpdf": "FPDI will extend this class but as it is also possible to use \"tecnickcom/tcpdf\" as an alternative there's no fixed dependency configured.",
+            "setasign/fpdi-fpdf": "Use this package to automatically evaluate dependencies to FPDF.",
+            "setasign/fpdi-tcpdf": "Use this package to automatically evaluate dependencies to TCPDF."
+        },
+        "time": "2015-11-30T10:53:14+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "filters/",
+                "fpdi.php",
+                "fpdf_tpl.php",
+                "fpdi_pdf_parser.php",
+                "pdf_context.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jan Slabon",
+                "email": "jan.slabon@setasign.com",
+                "homepage": "https://www.setasign.com"
+            }
+        ],
+        "description": "FPDI is a collection of PHP classes facilitating developers to read pages from existing PDF documents and use them as templates in FPDF. Because it is also possible to use FPDI with TCPDF, there are no fixed dependencies defined. Please see suggestions for packages which evaluates the dependencies automatically.",
+        "homepage": "https://www.setasign.com/fpdi",
+        "keywords": [
+            "fpdf",
+            "fpdi",
+            "pdf"
+        ]
+    },
+    {
+        "name": "mpdf/mpdf",
+        "version": "v6.1.3",
+        "version_normalized": "6.1.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mpdf/mpdf.git",
+            "reference": "7f138bf7508eac895ac2c13d2509b056ac7e7e97"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/mpdf/mpdf/zipball/7f138bf7508eac895ac2c13d2509b056ac7e7e97",
+            "reference": "7f138bf7508eac895ac2c13d2509b056ac7e7e97",
+            "shasum": ""
+        },
+        "require": {
+            "ext-mbstring": "*",
+            "php": ">=5.4.0",
+            "setasign/fpdi": "1.6.*"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.7"
+        },
+        "suggest": {
+            "ext-zlib": "Needed for compression of embedded resources, such as fonts"
+        },
+        "time": "2016-12-12T10:42:18+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "mpdf.php",
+                "classes"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0"
+        ],
+        "authors": [
+            {
+                "name": "Ian Back",
+                "role": "Developer"
+            }
+        ],
+        "description": "A PHP class to generate PDF files from HTML with Unicode/UTF-8 and CJK support",
+        "homepage": "http://mpdf.github.io",
+        "keywords": [
+            "pdf",
+            "php",
+            "utf-8"
         ]
     }
 ]

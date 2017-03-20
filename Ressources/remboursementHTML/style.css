@@ -1,0 +1,33 @@
+table {
+  border-width:1px; 
+  border-style:solid; 
+  border-color:black;
+  width: 550px;
+  color: darkblue;
+  border-collapse:collapse;
+}
+
+td { 
+  border-width:1px;
+  border-style:solid; 
+  border-color:black;
+}
+ 
+
+ div#entete {
+    border-width:1px;
+    border-style:solid;
+    border-color:black;
+    width: 600px;
+    color: darkblue;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+ }
+
+  div#body {
+    border-width:1px 1px 1px 1px; 
+    border-style:solid; 
+    border-color:black;
+    width: 600px;
+ }
