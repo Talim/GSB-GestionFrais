@@ -59,7 +59,11 @@ class PdoGsb {
      * @return array l'id, le nom et le prénom sous la forme d'un tableau associatif
      */
     public function getInfosVisiteur($login, $mdp) {
+<<<<<<< HEAD
         $requete_prepare = PdoGsb::$monPdo->prepare("SELECT utilisateurs.id AS id, utilisateurs.nom AS nom, utilisateurs.idtype as type, utilisateurs.prenom AS prenom "
+=======
+        $requete_prepare = PdoGsb::$monPdo->prepare("SELECT utilisateurs.id AS id, utilisateurs.nom AS nom, utilisateurs.prenom AS prenom "
+>>>>>>> master
                 . "FROM utilisateurs "
                 . "WHERE utilisateurs.login = :unLogin AND utilisateurs.mdp = :unMdp");
         $requete_prepare->bindParam(':unLogin', $login, PDO::PARAM_STR);
