@@ -16,6 +16,15 @@ function estConnecte() {
 }
 
 /**
+ * Teste si un comptable est connecté
+ * @return vrai ou faux
+ */
+function estComptable() {
+    return isset($_SESSION['user_type']) && $_SESSION['user_type'] == '2';
+}
+
+
+/**
  * Enregistre dans une variable session les infos d'un visiteur
  *
  * @param $id
