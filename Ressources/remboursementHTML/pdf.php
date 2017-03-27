@@ -1,20 +1,55 @@
 <?php
-
-// include autoloader
 require_once 'dompdf/autoload.inc.php';
-
-// reference the Dompdf namespace
 use Dompdf\Dompdf;
+include('template.php');
 
-// instantiate and use the dompdf class
-$dompdf = new Dompdf();
-$dompdf->loadHtml(file_get_contents('pdfModal.html.html'));
+class PDFGenerator{
 
-// (Optional) Setup the paper size and orientation
-$dompdf->setPaper('A4', 'portrait');
+    private $html;
 
-// Render the HTML as PDF
-$dompdf->render();
+    private $imma = '';
+    private $nom = '';
+    private $prenom = '';
 
-// Output the generated PDF to Browser
-$dompdf->stream('test.pdf');
+    private $date = '';
+
+    private $frais = '';
+    private $autreFrais = '';
+
+    function __construct($nom_p, $prenom_p, $imma_p, $date_p,  $frais_p, $autresFrais_p) {
+
+        $this->date = $date_p;
+        $this->imma = $imma_p;
+        $this->nom = $nom_p;
+        $this->prenom = $prenom_p;
+
+        $this->frais = $frais_p;
+        $this->autreFrais = $autresFrais_p;
+
+    }
+
+    public function generate() {
+        $dompdf = new Dompdf();
+
+        $html = returnTemplate($this->nom, $this->prenom, $this->imma, $this->date, $this->frais, $this->autreFrais);
+        $dompdf->loadHtml($html);
+
+
+        // (Optional) Setup the paper size and orientation
+        $dompdf->setPaper('A4', 'portrait');
+
+        // Render the HTML as PDF
+        $dompdf->render();
+
+        // Output the generated PDF to Browser
+        $dompdf->stream('test.pdf');
+    }
+
+}
+
+$frais = array(array("Nuité", 9, 80.00), array("Repas Midi", 12, 29.00), array("Véhicule", 750, 0.67));
+$autreFrais = array(array("18/12/2016", "Repas Représentation", 156.00), array("22/12/2016", "Achat Fleuriste Soirée \"MediLog\"", 120.30));
+
+$pdg = new PDFGenerator("CASCALES", "Arthur", "EE-614-QF", "2016-12-02", $frais, $autreFrais);
+
+$pdg->generate();
