@@ -1,26 +1,20 @@
 <?php
- // INCLUDE THE phpToPDF.php FILE
-require("phptopdf.php"); 
 
-// PUT YOUR HTML IN A VARIABLE
-$my_html="<HTML>
-<h2>Test HTML 03</h2><br><br>
-<div style=\"display:block; padding:20px; border:2pt solid:#FE9A2E; background-color:#F6E3CE; font-weight:bold;\">
-phpToPDF is pretty cool! <br><br>
-Now this paper size is 'A5'.  It can be any paper-size!
-</div><br><br>
-For more examples, visit us here --> http://phptopdf.com/examples/
-</HTML>";
+// include autoloader
+require_once 'dompdf/autoload.inc.php';
 
-// SET YOUR PDF OPTIONS -- FOR ALL AVAILABLE OPTIONS, VISIT HERE:  http://phptopdf.com/documentation/
-$pdf_options = array(
-  "source_type" => 'html',
-  "source" => $my_html,
-  "action" => 'download',
-  "file_name" => 'html_03.pdf',
-  "page_size" => 'A4');
+// reference the Dompdf namespace
+use Dompdf\Dompdf;
 
-// CALL THE phpToPDF FUNCTION WITH THE OPTIONS SET ABOVE
-Phptopdf::phptopdf($pdf_options);
+// instantiate and use the dompdf class
+$dompdf = new Dompdf();
+$dompdf->loadHtml(file_get_contents('index.html'));
 
-?>
+// (Optional) Setup the paper size and orientation
+$dompdf->setPaper('A4', 'portrait');
+
+// Render the HTML as PDF
+$dompdf->render();
+
+// Output the generated PDF to Browser
+$dompdf->stream('test.pdf');
