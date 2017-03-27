@@ -59,11 +59,7 @@ class PdoGsb {
      * @return array l'id, le nom et le prénom sous la forme d'un tableau associatif
      */
     public function getInfosVisiteur($login, $mdp) {
-<<<<<<< HEAD
         $requete_prepare = PdoGsb::$monPdo->prepare("SELECT utilisateurs.id AS id, utilisateurs.nom AS nom, utilisateurs.idtype as type, utilisateurs.prenom AS prenom "
-=======
-        $requete_prepare = PdoGsb::$monPdo->prepare("SELECT utilisateurs.id AS id, utilisateurs.nom AS nom, utilisateurs.prenom AS prenom "
->>>>>>> master
                 . "FROM utilisateurs "
                 . "WHERE utilisateurs.login = :unLogin AND utilisateurs.mdp = :unMdp");
         $requete_prepare->bindParam(':unLogin', $login, PDO::PARAM_STR);
@@ -354,5 +350,16 @@ class PdoGsb {
         $requete_prepare->bindParam(':unIdVisiteur', $idVisiteur, PDO::PARAM_STR);
         $requete_prepare->bindParam(':unMois', $mois, PDO::PARAM_STR);
         $requete_prepare->execute();
+    }
+
+    /**
+     * Obtient tous les visiteurs.
+     *
+     * @return array Un tableau associatif de tous les visiteurs.
+     */
+    public function getLesVisiteurs() {
+        $requete_prepare = PdoGSB::$monPdo->prepare("SELECT * FROM utilisateurs where idtype=1");
+        $requete_prepare->execute();
+        return $requete_prepare->fetchAll(PDO::FETCH_ASSOC);
     }
 }

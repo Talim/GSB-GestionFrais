@@ -19,7 +19,7 @@ document.getElementById("lstVisiteurs").addEventListener("onchange", function() 
 function devoilerElements(element){
     switch(element) {
         case 'lstVisiteurs':
-            getElem('lstVisiteurs');
+            getElem('lstVisiteurs').style.property = "visibility: visible";
             break;
         case 'lstMois':
             // ...
