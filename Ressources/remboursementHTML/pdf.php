@@ -8,7 +8,7 @@ use Dompdf\Dompdf;
 
 // instantiate and use the dompdf class
 $dompdf = new Dompdf();
-$dompdf->loadHtml(file_get_contents('index.html'));
+$dompdf->loadHtml(file_get_contents('pdfModal.html.html'));
 
 // (Optional) Setup the paper size and orientation
 $dompdf->setPaper('A4', 'portrait');
