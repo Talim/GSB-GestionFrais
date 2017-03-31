@@ -88,8 +88,8 @@
           </div>
         </div>
         <div class="form-groupModif form-group">
-        <button type="reset" class="btn btn-default">Réinitialiser</button>
-        <button type="submit" class="btn btn-default">Valider</button>
+        <button type="reset" class="btn btn-danger">Réinitialiser</button>
+        <button type="submit" class="btn btn-success">Valider</button>
       </div>
       </form>
     </div>
