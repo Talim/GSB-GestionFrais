@@ -1,6 +1,14 @@
-/**
+9/**
  * Created by laot.r on 27/03/2017.
  */
+
+function getVal(idElement){
+    return document.getElementById(idElement).value;
+}
+
+function getElem(idElement){
+    return document.getElementById(idElement);
+}
 
 /*
     Méthode Asynchrone XML Pure
@@ -27,17 +35,26 @@ function getXMLHttpRequest() {
 
 
 var xhr = getXMLHttpRequest();
+var input = getVal("lstVisiteurs").value;
 
-var leVisiteur = document.getElementById("lstVisiteurs").value;
-
-document.getElementById("lstVisiteurs").addEventListener("change", function(){ choixVisiteur(leVisiteur); }, false);
+document.getElementById("lstVisiteurs").addEventListener("onChange", function() { devoilerElements(input); }, false);
 
 
-function choixVisiteur(input){
-  if (input)
-    document.getElementById('containerMois').style.visibility = "visible";
+function devoilerElements(element){
+    console.log('test');
+    switch(element) {
+        case 'lstVisiteurs':
+            console.log('test');
+            getElem('lstMois').style.property = "visibility: visible";
+            document.write('<div>Print this after the script tag</div>');
+            break;
+        case 'lstMois':
+            // appel methode ajax
+            break;
+        default:
+            console.log('test');
+    }
 }
-
 
 function pseudochange() {
     var pseudo = document.getElementById("pseudo").value;
