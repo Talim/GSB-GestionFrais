@@ -1,0 +1,12 @@
+.form-groupModif {
+  margin-left: 0px !important;
+  margin-bottom: 15px !important;
+}
+.controlTextModif{
+  text-align: left !important;
+  padding-left: 0% !important;
+}
+
+.btnDefaultModif{
+  border-color: #ccc;
+}
