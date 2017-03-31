@@ -358,7 +358,7 @@ class PdoGsb {
      * @return array Un tableau associatif de tous les visiteurs.
      */
     public function getLesVisiteurs() {
-        $requete_prepare = PdoGSB::$monPdo->prepare("SELECT * FROM utilisateurs where idtype=1");
+        $requete_prepare = PdoGSB::$monPdo->prepare("SELECT * FROM utilisateurs where idtype=1 order by nom ASC");
         $requete_prepare->execute();
         return $requete_prepare->fetchAll(PDO::FETCH_ASSOC);
     }
