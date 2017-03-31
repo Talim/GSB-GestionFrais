@@ -17,10 +17,10 @@
  */
 class PdoGsb {
 
-    private static $serveur = 'mysql:host=localhost';
-    private static $bdd = 'dbname=gsb_frais';
-    private static $user = 'userGsb';
-    private static $mdp = 'secret';
+    private static $serveur = 'mysql:host=mysql.pod4.sio.lan';
+    private static $bdd = 'dbname=gsb';
+    private static $user = 'slamgsb';
+    private static $mdp = 'slamgsb2017';
     private static $monPdo;
     private static $monPdoGsb = null;
 
@@ -321,10 +321,10 @@ class PdoGsb {
      * @return array un tableau avec des champs de jointure entre une fiche de frais et la ligne d'état
      */
     public function getLesInfosFicheFrais($idVisiteur, $mois) {
-        $requete_prepare = PdoGSB::$monPdo->prepare("SELECT ficheFrais.idEtat as idEtat, ficheFrais.dateModif as dateModif,"
-                . "ficheFrais.nbJustificatifs as nbJustificatifs,ficheFrais.montantValide as montantValide, etat.libelle as libEtat "
+        $requete_prepare = PdoGSB::$monPdo->prepare("SELECT fichefrais.idetat as idEtat, fichefrais.datemodif as dateModif,"
+                . "fichefrais.nbjustificatifs as nbJustificatifs,fichefrais.montantvalide as montantValide, etat.libelle as libEtat "
                 . "FROM fichefrais "
-                . "INNER JOIN Etat ON ficheFrais.idEtat = Etat.id "
+                . "INNER JOIN etat ON fichefrais.idetat = etat.id "
                 . "WHERE fichefrais.idvisiteur = :unIdVisiteur "
                 . "AND fichefrais.mois = :unMois");
         $requete_prepare->bindParam(':unIdVisiteur', $idVisiteur, PDO::PARAM_STR);
@@ -342,8 +342,8 @@ class PdoGsb {
      * @param string $mois sous la forme aaaamm
      */
     public function majEtatFicheFrais($idVisiteur, $mois, $etat) {
-        $requete_prepare = PdoGSB::$monPdo->prepare("UPDATE ficheFrais "
-                . "SET idEtat = :unEtat, dateModif = now() "
+        $requete_prepare = PdoGSB::$monPdo->prepare("UPDATE fichefrais "
+                . "SET idetat = :unEtat, datemodif = now() "
                 . "WHERE fichefrais.idvisiteur = :unIdVisiteur "
                 . "AND fichefrais.mois = :unMois");
         $requete_prepare->bindParam(':unEtat', $etat, PDO::PARAM_STR);
@@ -358,7 +358,7 @@ class PdoGsb {
      * @return array Un tableau associatif de tous les visiteurs.
      */
     public function getLesVisiteurs() {
-        $requete_prepare = PdoGSB::$monPdo->prepare("SELECT * FROM utilisateurs where idtype=1");
+        $requete_prepare = PdoGSB::$monPdo->prepare("SELECT * FROM utilisateurs where idtype=1 order by nom ASC");
         $requete_prepare->execute();
         return $requete_prepare->fetchAll(PDO::FETCH_ASSOC);
     }

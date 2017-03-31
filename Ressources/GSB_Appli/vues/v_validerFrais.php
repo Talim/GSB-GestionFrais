@@ -9,13 +9,14 @@
                 //var_dump($lesVisiteurs);
                 foreach ($lesVisiteurs as $unVisiteur) {
                   //($unVisiteur);
+                    $idVisiteur = $unVisiteur["id"];
                     $nom = $unVisiteur["nom"];
                     $prenom = $unVisiteur["prenom"];
                     ?>
-                    <option value=""><?php echo $nom . " - " . $prenom ?></option>
+                    <option value="<?php echo $idVisiteur ?>"><?php echo $nom . " - " . $prenom ?></option>
                     <?php
                 }
-                ?>
+                ?>gm
                 </select>
                 <div id="containerMois" style="visibility: hidden">
                     <h4>Sélectionner un mois : </h4>
@@ -44,3 +45,4 @@
         </form>
     </div>
 </div>
+<script type='text/javascript' src='./vues/v_validerFrais.js'></script>
