@@ -7,7 +7,7 @@
         <?php
         if($idEtat == "VA"){
         ?>
-            <form style="margin-top: 10px" action="index.php?uc=etatFrais&action=genererPDF" method="post" role="form">
+            <form style="margin-top: 10px" target="_blank" action="index.php?uc=etatFrais&action=genererPDF" method="post" role="form">
                 <input id="btn_pdf" type="submit" value="Télécharger le PDF" class="btn btn-success btn-pdf" role="button" />
             </form>
         <?php

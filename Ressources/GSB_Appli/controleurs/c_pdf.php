@@ -43,7 +43,7 @@ class PDFGenerator{
 
         // Output the generated PDF to Browser
         //$dompdf->stream();
-        file_put_contents("document.pdf", $dompdf->output());
+        file_put_contents("pdf_documents/". $this->imma . "_" . $this->date . ".pdf" , $dompdf->output());
 
 
     }
