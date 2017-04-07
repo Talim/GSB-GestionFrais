@@ -9,7 +9,7 @@
         <div class="form-groupModif row">
         <label for="dp_choixVisiteur" class="col-sm-2 controlTextModif control-label">Choisir le visiteur:</label>
         <div class="col-sm-2">
-        <select id="dp_choixVisiteur" class="btn btndefaultModif">
+        <select id="dp_choixVisiteur" class="btn btndefaultModif dropdown-toggle">
           <option>Mustard</option>
           <option>Ketchup</option>
           <option>Relish</option>
@@ -33,7 +33,7 @@
       </div>
     <div class="container">
     <h2>Frais au forfait</h2>
-    <div class="panel panel-info">
+    <div class="panel panel-warning">
       <div class="panel-heading">Descriptif des éléments forfait</div>
 
       <table class="table table-bordered table-responsive">
@@ -42,7 +42,6 @@
           <th class="libelle">Nuitée</th>
           <th class="libelle">Etape</th>
           <th class="libelle">Km</th>
-          <th class="libelle">Situation</th>
         </tr>
         <tbody>
 
@@ -51,16 +50,6 @@
             <td><input id="inp_nuite" type="number" min="0" class="form-control"> </td>
             <td><input id="inp_etape"type="number" min="0" class="form-control"></td>
             <td><input id="inp_km" type="number" min="0" class="form-control"></td>
-            <td>
-              <div class="text-center">
-                <select id="dp_situationForfait" class="btn btnDefaultModif">
-                  <option>Mustard</option>
-                  <option>Ketchup</option>
-                  <option>Relish</option>
-                </select>
-              </div>
-
-
           </tr>
         </tbody>
       </table>
@@ -69,7 +58,7 @@
 
       <div class="container">
       <h2>Frais Hors forfait</h2>
-      <div class="panel panel-info">
+      <div class="panel panel-warning">
         <div class="panel-heading">Descriptif des éléments hors forfait</div>
 
         <table class="table table-bordered table-responsive">
@@ -77,7 +66,6 @@
             <th class="libelle">Date</th>
             <th class="libelle">Libellé</th>
             <th class="libelle">Montant</th>
-            <th class="libelle">Situation</th>
           </tr>
           <tbody>
 
@@ -85,16 +73,6 @@
               <td><input id="inp_horsDate" type="number" min="0" class="form-control"></td>
               <td><input id="inp_horsLibelle" type="number" min="0" class="form-control"> </td>
               <td><input id="inp_horsMontant" type="number" min="0" class="form-control"></td>
-              <td>
-                <div class="text-center">
-                  <select id="dp_situationHorsForfait" class="btn btnDefaultModif">
-                    <option>Mustard</option>
-                    <option>Ketchup</option>
-                    <option>Relish</option>
-                  </select>
-                </div>
-
-
             </tr>
           </tbody>
         </table>
@@ -110,8 +88,8 @@
           </div>
         </div>
         <div class="form-groupModif form-group">
-        <button type="reset" class="btn btn-default">Réinitialiser</button>
-        <button type="submit" class="btn btn-default">Valider</button>
+        <button type="reset" class="btn btn-danger">Réinitialiser</button>
+        <button type="submit" class="btn btn-success">Valider</button>
       </div>
       </form>
     </div>
