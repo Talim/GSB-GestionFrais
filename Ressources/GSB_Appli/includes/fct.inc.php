@@ -82,6 +82,7 @@ function getMois($date) {
     return $annee . $mois;
 }
 
+
 /* gestion des erreurs */
 
 /**

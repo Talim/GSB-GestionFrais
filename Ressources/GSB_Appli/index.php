@@ -12,7 +12,7 @@ if (!isset($_REQUEST['uc']) && !$estConnecte) {
     $_REQUEST['uc'] = 'accueil';
 }
 $uc = $_REQUEST['uc'];
-$uc='test';
+//$uc='test';
 switch ($uc) {
     case 'connexion': {
             include("controleurs/c_connexion.php");
@@ -43,7 +43,7 @@ switch ($uc) {
         break;
     }
     case 'test' : {
-        include("vues/v_suiviPaiementFiche.php");
+        include("vues/c_connexion.php");
         break;
     }
 }

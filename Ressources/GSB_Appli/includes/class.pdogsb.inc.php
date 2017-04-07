@@ -362,4 +362,30 @@ class PdoGsb {
         $requete_prepare->execute();
         return $requete_prepare->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    /**
+     * Obtient le visiteurs.
+     *
+     * @return array Un tableau associatif du visiteur.
+     */
+    public function getLeVisiteur($idVisiteur) {
+        $requete_prepare = PdoGSB::$monPdo->prepare("SELECT * FROM utilisateurs where id=:visiteur");
+        $requete_prepare->bindParam(':visiteur', $idVisiteur, PDO::PARAM_STR);
+        $requete_prepare->execute();
+        $laLigne = $requete_prepare->fetch();
+        return $laLigne;
+    }
+
+    /**
+     * Obtient le frais forfait.
+     *
+     * @return array Un tableau associatif du frais.
+     */
+    public function getLeFraisForfait($idFrais) {
+        $requete_prepare = PdoGSB::$monPdo->prepare("SELECT * FROM fraisforfait where id=:frais");
+        $requete_prepare->bindParam(':frais', $idFrais, PDO::PARAM_STR);
+        $requete_prepare->execute();
+        $laLigne = $requete_prepare->fetch();
+        return $laLigne;
+    }
 }
