@@ -9,7 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./styles/bootstrap/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="./styles/stylePerso.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
     <script type="text/javascript" src="./js/bootstrap.js"></script>
+    <script type="text/javascript" src="./js/checkGroup.js"></script>
 </head>
 <body>
     <div class="container">

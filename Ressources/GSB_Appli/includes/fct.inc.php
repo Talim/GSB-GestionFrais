@@ -215,3 +215,9 @@ function nbErreurs() {
         return count($_REQUEST['erreurs']);
     }
 }
+
+function conversionDate($leMois){
+  $numAnnee = substr($leMois, 0, 4);
+  $numMois = substr($leMois, 4, 2);
+  return $numMois."/".$numAnnee;
+}

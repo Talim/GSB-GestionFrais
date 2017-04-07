@@ -388,4 +388,19 @@ class PdoGsb {
         $laLigne = $requete_prepare->fetch();
         return $laLigne;
     }
+
+    /**
+     * Obtient tous les fiches de frais en VA
+     *
+     * @return array Un tableau associatif de tous les frais VA.
+     */
+    public function getLesFichesFraisVa() {
+        $requete_prepare = PdoGSB::$monPdo->prepare("SELECT nom,prenom,mois,montantValide,idVisiteur
+                                                     FROM utilisateurs inner join fichefrais
+                                                     on utilisateurs.id = fichefrais.idVisiteur
+                                                     where idtype=1 and idEtat='VA'
+                                                     order by nom ASC");
+        $requete_prepare->execute();
+        return $requete_prepare->fetchAll(PDO::FETCH_ASSOC);
+      }
 }
