@@ -42,9 +42,10 @@ switch ($uc) {
         include("controleurs/c_suivreFrais.php");
         break;
     }
+    /*
     case 'test' : {
-        include("vues/c_connexion.php");
+        include("controleurs/c_suiviPaiementFiche.php");
         break;
-    }
+    }*/
 }
 include("vues/v_pied.php");

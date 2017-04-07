@@ -13,7 +13,9 @@
       </thead>
       <tbody>
         <?php
+          $i = 0;
           foreach ($lesFiches as $uneFiche) {
+            $i += 1;
             $nom = $uneFiche['nom'];
             $prenom = $uneFiche['prenom'];
             $mois = $uneFiche['mois'];
@@ -26,8 +28,12 @@
             <td><?php echo($prenom)?></td>
             <td><?php echo conversionDate($mois)?></td>
             <td><?php echo($montant)?></td>
-             <td><button class="btn"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button></td>
+             <td>
+                 <a target="_blank" href="index.php?uc=etatFrais&action=genererPDF&i=<?php echo($idVisiteur) ?>&m=<?php echo($mois) ?>"><button class="btn"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button></a>
+           </td>
+
           </tr>
+
             <?php
           }
           ?>

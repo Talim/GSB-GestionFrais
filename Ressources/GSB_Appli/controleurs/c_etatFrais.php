@@ -27,7 +27,7 @@ switch ($action) {
             $numAnnee = substr($leMois, 0, 4);
             $numMois = substr($leMois, 4, 2);
             $libEtat = $lesInfosFicheFrais['libEtat'];
-            $idEtat = $lesInfosFicheFrais['idEtat'];            
+            $idEtat = $lesInfosFicheFrais['idEtat'];
             $montantValide = $lesInfosFicheFrais['montantValide'];
             $nbJustificatifs = $lesInfosFicheFrais['nbJustificatifs'];
             $dateModif = $lesInfosFicheFrais['dateModif'];
@@ -38,7 +38,16 @@ switch ($action) {
 
     case 'genererPDF': {
 
+        if(isset($_GET['i'])){
+          $leMois = $_GET['m'];
+          $idVisiteur = $_GET['i'];
+        }
+        else{
+
         $leMois = $_SESSION['lstMois'];
+      }
+
+      echo("XAAWXAXAX");
 
         $leVisiteur = $pdo->getLeVisiteur($idVisiteur);
 
@@ -72,7 +81,7 @@ switch ($action) {
         }
         header('location:' . $urlf);
 
-        break;   
+        break;
 
     }
 }
