@@ -1,3 +1,4 @@
+<form action="index.php?uc=suivreFrais&action=miseEnPaiement" method="post">
 <div class="row">
   <div class="col-md-10 col-md-offset-1">
     <div class="panel panel-warning">
@@ -23,13 +24,13 @@
             $idVisiteur = $uneFiche['idVisiteur']
             ?>
             <tr>
-            <td><input type="checkbox" class="checkthis" id="<?php echo($idVisiteur."-".$mois) ?>" /></td>
+            <td><input type="checkbox" class="checkthis" id="<?php echo($idVisiteur."-".$mois) ?>" name="id[]" value="<?php echo($idVisiteur."-".$mois) ?>" /></td>
             <td><?php echo($nom)?></td>
             <td><?php echo($prenom)?></td>
             <td><?php echo conversionDate($mois)?></td>
             <td><?php echo($montant)?></td>
              <td>
-                 <a target="_blank" href="index.php?uc=etatFrais&action=genererPDF&i=<?php echo($idVisiteur) ?>&m=<?php echo($mois) ?>"><button class="btn"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button></a>
+                 <a target="_blank" href="index.php?uc=etatFrais&action=genererPDF&i=<?php echo($idVisiteur) ?>&m=<?php echo($mois) ?>"><button type="button" class="btn"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button></a>
            </td>
 
           </tr>
@@ -42,3 +43,4 @@
    </div>
    <button class="btn btn-success" type="submit">Mise en Paiement</button>
 </div>
+</form>

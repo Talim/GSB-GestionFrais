@@ -7,6 +7,15 @@ switch ($action) {
     include('vues/v_suiviPaiementFiche.php');
    break;
   }
+  case 'miseEnPaiement': {
+    foreach ($_POST['id'] as $idVisiteur) {
+      $id = substr($idVisiteur, 0, strpos($idVisiteur, '-'));
+      $mois = substr(strstr($idVisiteur, '-'), strlen('-'));
+      $pdo->majEtatFicheFrais($id,$mois,'RB');
+    }
+    //header('location:index.php?uc=suivreFrais&action=selectionnerFiche');    
+   break;
+  }
   case 'genererPDF': {
 
       if(isset($_GET['i'])){
