@@ -10,3 +10,7 @@
 .btnDefaultModif{
   border-color: #ccc;
 }
+
+.modal-content{
+  width: 300px;
+}

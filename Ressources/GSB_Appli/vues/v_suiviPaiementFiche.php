@@ -41,6 +41,26 @@
        </tbody>
      </table>
    </div>
-   <button class="btn btn-success" type="submit">Mise en Paiement</button>
+   <button class="btn btn-success" type="button"  data-toggle="modal" data-target="#myModal" >Mise en Paiement</button>
+   <!-- Modal -->
+   <center>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"></h4>
+      </div>
+      <div class="modal-body">
+        Confirmation de mise en paiement
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+        <button type="submit" class="btn btn-primary">Confirmer</button>
+      </div>
+    </div>
+  </div>
+</div>
+</center>
 </div>
 </form>

@@ -13,7 +13,7 @@ switch ($action) {
       $mois = substr(strstr($idVisiteur, '-'), strlen('-'));
       $pdo->majEtatFicheFrais($id,$mois,'RB');
     }
-    //header('location:index.php?uc=suivreFrais&action=selectionnerFiche');    
+    header('location:index.php?uc=suivreFrais&action=selectionnerFiche');
    break;
   }
   case 'genererPDF': {
@@ -27,7 +27,6 @@ switch ($action) {
       $leMois = $_SESSION['lstMois'];
     }
 
-    echo("XAAWXAXAX");
 
       $leVisiteur = $pdo->getLeVisiteur($idVisiteur);
 
