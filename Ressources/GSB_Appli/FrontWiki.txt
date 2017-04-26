@@ -1,4 +1,17 @@
+ID FRONT SUIVI PAIEMENT FICHE
+
 dp_choixVisiteur
 dp_choixMois
 dp_situationForfait
 dp_situationHorsForfait
+inp_repasMidi
+inp_nuite
+inp_etape
+inp_km
+inp_horsDate
+inp_horsLibelle
+inp_horsMontant
+inp_nbJustificatif
+
+
+////////////////////////////////////////////////////

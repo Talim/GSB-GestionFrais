@@ -4,6 +4,15 @@
     <div class="panel-body">
         <strong><u>Etat :</u></strong> <?php echo $libEtat ?> depuis le <?php echo $dateModif ?> <br>
         <strong><u>Montant validé :</u></strong> <?php echo $montantValide ?>
+        <?php
+        if($idEtat == "VA"){
+        ?>
+            <form style="margin-top: 10px" target="_blank" action="index.php?uc=etatFrais&action=genererPDF" method="post" role="form">
+                <input id="btn_pdf" type="submit" value="Télécharger le PDF" class="btn btn-success btn-pdf" role="button" />
+            </form>
+        <?php
+        }
+        ?>
     </div>
 </div>
 <div class="panel panel-info">
@@ -55,3 +64,4 @@
         ?>
     </table>
 </div>
+

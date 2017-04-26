@@ -82,6 +82,7 @@ function getMois($date) {
     return $annee . $mois;
 }
 
+
 /* gestion des erreurs */
 
 /**
@@ -213,4 +214,10 @@ function nbErreurs() {
     } else {
         return count($_REQUEST['erreurs']);
     }
+}
+
+function conversionDate($leMois){
+  $numAnnee = substr($leMois, 0, 4);
+  $numMois = substr($leMois, 4, 2);
+  return $numMois."/".$numAnnee;
 }

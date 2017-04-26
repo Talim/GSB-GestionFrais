@@ -1,6 +1,6 @@
 .form-groupModif {
   margin-left: 0px !important;
-  margin-bottom: 15px !important;
+  margin-bottom: 5px !important;
 }
 .controlTextModif{
   text-align: left !important;
@@ -9,4 +9,21 @@
 
 .btnDefaultModif{
   border-color: #ccc;
+}
+
+.modal-content{
+  width: 300px;
+}
+
+.color-compta,
+.color-compta:focus,
+.color-compta:hover {
+  color: #f0ad4e;
+}
+
+.color-compta > li.active > a,
+.color-compta  > li.active > a:hover,
+.color-compta  > li.active > a:focus{
+  color: #fff;
+  background-color: #f0ad4e;
 }

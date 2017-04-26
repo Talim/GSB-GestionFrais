@@ -1,110 +1,66 @@
+<form action="index.php?uc=suivreFrais&action=miseEnPaiement" method="post">
 <div class="row">
-
-  <div class="col-8">
-    <div class="container">
-    <h2>Validation des frais par visiteur</h2>
-    <form class="form-horizontal">
-      <div class="form-groupModif form-group">
-        <label for="dp_choixVisiteur" class="control-label">Choisir le visiteur :</label>
-        <select id="dp_choixVisiteur" class="btn btndefaultModif">
-          <option>Mustard</option>
-          <option>Ketchup</option>
-          <option>Relish</option>
-        </select>
-      </div>
-      <div class="form-group form-groupModif">
-        <label for="dp_choixMois" class="control-label">Mois :</label>
-        <select id="dp_choixMois" class="btn btnDefaultModif">
-          <option>Mustard</option>
-          <option>Ketchup</option>
-          <option>Relish</option>
-        </select>
-      </div>
-    </div>
-    <div class="container">
-    <h2>Frais au forfait</h2>
-    <div class="panel panel-info">
-      <div class="panel-heading">Descriptif des éléments forfait</div>
-
-      <table class="table table-bordered table-responsive">
-        <tr>
-          <th class="libelle">Repas Midi</th>
-          <th class="libelle">Nuitée</th>
-          <th class="libelle">Etape</th>
-          <th class="libelle">Km</th>
-          <th class="libelle">Situation</th>
-        </tr>
-        <tbody>
-
-          <tr>
-            <td><input type="number" min="0" class="form-control"></td>
-            <td><input type="number" min="0" class="form-control"> </td>
-            <td><input type="number" min="0" class="form-control"></td>
-            <td><input type="number" min="0" class="form-control"></td>
-            <td>
-              <div class="text-center">
-                <select id="dp_situationForfait" class="btn btnDefaultModif">
-                  <option>Mustard</option>
-                  <option>Ketchup</option>
-                  <option>Relish</option>
-                </select>
-              </div>
-
-
-          </tr>
-        </tbody>
-      </table>
-      </div>
-      </div>
-
-      <div class="container">
-      <h2>Frais Hors forfait</h2>
-      <div class="panel panel-info">
-        <div class="panel-heading">Descriptif des éléments forfait</div>
-
-        <table class="table table-bordered table-responsive">
-          <tr>
-            <th class="libelle">Date</th>
-            <th class="libelle">Libellé</th>
-            <th class="libelle">Montant</th>
-            <th class="libelle">Situation</th>
-          </tr>
-          <tbody>
-
+  <div class="col-md-10 col-md-offset-1">
+    <div class="panel panel-warning">
+    <div class="panel-heading">Fiche de frais en attente de paiement </div>
+    <table class="table table-bordered table-responsive">
+      <thead>
+        <th><input type="checkbox" name="chk[]"  onchange="checkAll(this)"  id="checkall" /></th>
+        <th>Nom</th>
+        <th>Prenom</th>
+        <th>Date</th>
+        <th>Montant</th>
+        <th>Fiche de frais</th>
+      </thead>
+      <tbody>
+        <?php
+          $i = 0;
+          foreach ($lesFiches as $uneFiche) {
+            $i += 1;
+            $nom = $uneFiche['nom'];
+            $prenom = $uneFiche['prenom'];
+            $mois = $uneFiche['mois'];
+            $montant = $uneFiche['montantValide'];
+            $idVisiteur = $uneFiche['idVisiteur']
+            ?>
             <tr>
-              <td><input type="number" min="0" class="form-control"></td>
-              <td><input type="number" min="0" class="form-control"> </td>
-              <td><input type="number" min="0" class="form-control"></td>
-              <td>
-                <div class="text-center">
-                  <select id="dp_situationHorsForfait" class="btn btnDefaultModif">
-                    <option>Mustard</option>
-                    <option>Ketchup</option>
-                    <option>Relish</option>
-                  </select>
-                </div>
+            <td><input type="checkbox" class="checkthis" id="<?php echo($idVisiteur."-".$mois) ?>" name="id[]" value="<?php echo($idVisiteur."-".$mois) ?>" /></td>
+            <td><?php echo($nom)?></td>
+            <td><?php echo($prenom)?></td>
+            <td><?php echo conversionDate($mois)?></td>
+            <td><?php echo($montant)?></td>
+             <td>
+                 <a target="_blank" href="index.php?uc=etatFrais&action=genererPDF&i=<?php echo($idVisiteur) ?>&m=<?php echo($mois) ?>"><button type="button" class="btn"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button></a>
+           </td>
 
+          </tr>
 
-            </tr>
-          </tbody>
-        </table>
-        </div>
-        </div>
-
-        <div class="container">
-        <div class="form-groupModif form-group">
-          <div class="form-groupModif row">
-          <label for="" class="col-sm-2 controlTextModif control-label">Nb Justificatifs:</label>
-          <div class="col-sm-2">
-          <input type="number" min="0" class="form-control">
-          </div>
-        </div>
-        <div class="form-groupModif form-group">
-        <button type="reset" class="btn btn-default">Réinitialiser</button>
-        <button type="submit" class="btn btn-default">Valider</button>
+            <?php
+          }
+          ?>
+       </tbody>
+     </table>
+   </div>
+   <button class="btn btn-success" type="button"  data-toggle="modal" data-target="#myModal" >Mise en Paiement</button>
+   <!-- Modal -->
+   <center>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"></h4>
       </div>
-      </form>
-    </div>
+      <div class="modal-body">
+        Confirmation de mise en paiement
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+        <button type="submit" class="btn btn-primary">Confirmer</button>
+      </div>
     </div>
   </div>
 </div>
+</center>
+</div>
+</form>
