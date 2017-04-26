@@ -15,6 +15,17 @@
   width: 300px;
 }
 
+.color-compta-back,
+.color-compta-back:focus,
+.color-compta-back:hover{
+  background-color: #f0ad4e !important;
+}
+.color-compta-border,
+.color-compta-border:focus,
+.color-compta-border:hover{
+  border-color: #f0ad4e !important;
+}
+
 .color-compta,
 .color-compta:focus,
 .color-compta:hover {
@@ -26,4 +37,8 @@
 .color-compta  > li.active > a:focus{
   color: #fff;
   background-color: #f0ad4e;
+}
+
+.label-white{
+  color: #ffffff !important;
 }
