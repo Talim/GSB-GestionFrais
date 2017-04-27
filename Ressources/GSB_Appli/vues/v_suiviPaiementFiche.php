@@ -2,7 +2,7 @@
 <div class="row">
   <div class="col-md-10 col-md-offset-1">
     <div class="panel panel-warning">
-    <div class="panel-heading">Fiche de frais en attente de paiement </div>
+    <div class="panel-heading color-compta-back color-compta-border label-white">Fiche de frais en attente de paiement </div>
     <table class="table table-bordered table-responsive">
       <thead>
         <th><input type="checkbox" name="chk[]"  onchange="checkAll(this)"  id="checkall" /></th>
