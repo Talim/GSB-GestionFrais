@@ -4,13 +4,11 @@ switch ($action) {
   case 'selectionnerVisiteur': {
     $lesVisiteurs = $pdo->getLesVisiteurs();
 
-    include('vues/v_validerFrais.php');
+    include('vues/v_choixVisiteurFicheFrais.php');
     break;
   }
-  case 'selectionnerMois': {
-    break;
-  }
-  case 'suivrePaiementFrais': {
+  case 'voirFrais': {
+    include('vues/v_validerFraisFront.php');
     break;
   }
 }

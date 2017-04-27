@@ -1,17 +1,5 @@
-9/**
- * Created by laot.r on 27/03/2017.
- */
-
-function getVal(idElement){
-    return document.getElementById(idElement).value;
-}
-
-function getElem(idElement){
-    return document.getElementById(idElement);
-}
-
 /*
-    Méthode Asynchrone XML Pure
+    Défi -_-
  */
 function getXMLHttpRequest() {
     var xhr = null;
@@ -34,47 +22,56 @@ function getXMLHttpRequest() {
 }
 
 
-var xhr = getXMLHttpRequest();
-var input = getVal("lstVisiteurs").value;
+/*
+    Listener de la liste des Visiteurs
+ */
+document.getElementById("lstVisiteurs").addEventListener("change", function(){
+  var leVisiteur = document.getElementById("lstVisiteurs").value;
+  choixVisiteur(leVisiteur);
 
-document.getElementById("lstVisiteurs").addEventListener("onChange", function() { devoilerElements(input); }, false);
+}, false);
 
+document.getElementById("ok").addEventListener("click", function() {
 
-function devoilerElements(element){
-    console.log('test');
-    switch(element) {
-        case 'lstVisiteurs':
-            console.log('test');
-            getElem('lstMois').style.property = "visibility: visible";
-            document.write('<div>Print this after the script tag</div>');
-            break;
-        case 'lstMois':
-            // appel methode ajax
-            break;
-        default:
-            console.log('test');
-    }
-}
+}, false);
 
-function pseudochange() {
-    var pseudo = document.getElementById("pseudo").value;
-    var Var1 = encodeURIComponent(pseudo);
-    var lien = "test.php?pseudo=" + Var1;
-    xhr.open("GET", lien, true);
-    xhr.send(null);
-}
-
-xhr.onreadystatechange = function() {
-    if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
-        if (xhr.responseText == "Vide") {
-            document.getElementById("messagepseudo").innerHTML = "<font color=\"red\">Vous devez spécifier un pseudo!</font>";
-        } else {
-            document.getElementById("messagepseudo").innerHTML = "";
-        }
-    }
-}
 
 /*
-                je change de selection
-                au changement j'invoke la methode 'devoilerElements' via le listener
+    Traiement de la liste des Visiteurs
+ */
+function choixVisiteur(input){
+  // Vérification du visiteur
+  if (input && input !== "nothing"){
+    // Instanciation d'un objet XMLHttpRequest
+    var xhr = getXMLHttpRequest();
+    // Au changement d'état...
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+          // On dévoile la liste des mois disponibles
+          document.getElementById('containerMois').style.visibility = "visible";
+          // On hydrate la liste des mois selon la réponse AJAX
+          document.getElementById("lstMois").innerHTML = xhr.responseText;
+        }
+        else {
+          // Check valeur modifié côté client
+          if (xhr.responseText === "erreur"){
+            document.getElementById("erreur").innerHTML = "<div class=\"alert alert-danger alert-dismissible\" role=\"alert\"> <button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button><strong>Attention !</strong> Une erreur est survenue dû à une modification de valeur (côté client). Veuillez ne pas changer les valeurs</div>";
+            document.getElementById('containerMois').style.visibility = "hidden";
+          }
+        }
+    };
+    var numVisiteur = encodeURIComponent(document.getElementById("lstVisiteurs").value);
+
+    xhr.open("POST", "controleurs/c_getMois.php", true);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.send("numV=" + numVisiteur);
+  }
+  else {
+    document.getElementById('containerMois').style.visibility = "hidden";
+  }
+}
+
+
+/*
+    Appel de la méthode AJAX
  */

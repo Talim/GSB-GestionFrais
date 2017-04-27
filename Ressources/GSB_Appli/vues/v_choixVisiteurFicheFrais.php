@@ -1,11 +1,13 @@
+<div id="erreur"></div>
 <h2>Validation des frais par visiteur</h2>
+
 <div class="row">
     <div class="col-md-4">
-        <form action="index.php?uc=etatFrais&action=voirEtatFrais" method="post" role="form">
+        <form action="index.php?uc=validerFrais&action=voirFrais" method="post" role="form">
             <div class="form-group">
                 <h4>Choisir un visiteur : </h4>
                 <select id="lstVisiteurs" name="lstVisiteurs" class="form-control">
-
+                <option value="nothing">---- Selectionner ----</option>
                 <?php
 
                 // On récupère tous les visiteurs dans la base de données
@@ -23,23 +25,7 @@
                 <div id="containerMois" style="visibility: hidden">
                     <h4>Sélectionner un mois : </h4>
                     <select id="lstMois" name="lstMois" class="form-control">
-                        <?php
-
-                        foreach ($lesMois as $unMois) {
-                            $mois = $unMois['mois'];
-                            $numAnnee = $unMois['numAnnee'];
-                            $numMois = $unMois['numMois'];
-                            if ($mois == $moisASelectionner) {
-                                ?>
-                                <option selected value="<?php echo $mois ?>"><?php echo $numMois . "/" . $numAnnee ?> </option>
-                                <?php
-                            } else {
-                                ?>
-                                <option value="<?php echo $mois ?>"><?php echo $numMois . "/" . $numAnnee ?> </option>
-                                <?php
-                            }
-                        }
-                        ?>
+                        <!-- AJAX -->
                     </select>
                 </div>
 
@@ -50,4 +36,4 @@
         </form>
     </div>
 </div>
-<script type='text/javascript' src='./vues/v_validerFrais.js'></script>
+<script type='text/javascript' src='./vues/js/v_validerFrais.js'></script>
