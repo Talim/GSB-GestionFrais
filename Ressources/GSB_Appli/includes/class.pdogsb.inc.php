@@ -21,9 +21,6 @@ class PdoGsb {
     // private static $bdd = 'dbname=gsb';
     // private static $user = 'slamgsb';
     // private static $mdp = 'slamgsb2017';
-    // private static $monPdo;
-    // private static $monPdoGsb = null;
-
 
     private static $serveur = 'mysql:host=localhost';
     private static $bdd = 'dbname=gsb';
@@ -275,7 +272,9 @@ class PdoGsb {
     public function creeNouveauFraisHorsForfait($idVisiteur, $mois, $libelle, $date, $montant) {
         $dateFr = dateFrancaisVersAnglais($date);
         $requete_prepare = PdoGSB::$monPdo->prepare("INSERT INTO lignefraishorsforfait "
-                . "VALUES ('', :unIdVisiteur,:unMois, :unLibelle, :uneDateFr, :unMontant) ");
+                . "VALUES (:lastId, :unIdVisiteur,:unMois, :unLibelle, :uneDateFr, :unMontant) ");
+        $lastId = PdoGSB::$monPdo->lastInsertId();                      // Fix crash :)
+        $requete_prepare->bindParam(':lastId', $lastId, PDO::PARAM_INT);// Fix crash :)
         $requete_prepare->bindParam(':unIdVisiteur', $idVisiteur, PDO::PARAM_STR);
         $requete_prepare->bindParam(':unMois', $mois, PDO::PARAM_STR);
         $requete_prepare->bindParam(':unLibelle', $libelle, PDO::PARAM_STR);
