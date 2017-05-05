@@ -22,10 +22,10 @@ class PdoGsb {
     // private static $user = 'slamgsb';
     // private static $mdp = 'slamgsb2017';
 
-    private static $serveur = 'mysql:host=localhost';
+    private static $serveur = 'mysql:host=mysql.pod4.sio.lan';
     private static $bdd = 'dbname=gsb';
-    private static $user = 'root';
-    private static $mdp = 'root';
+    private static $user = 'slamgsb';
+    private static $mdp = 'slamgsb2017';
     private static $monPdo;
     private static $monPdoGsb = null;
 

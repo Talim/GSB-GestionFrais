@@ -47,8 +47,6 @@ switch ($action) {
         $leMois = $_SESSION['lstMois'];
       }
 
-      echo("XAAWXAXAX");
-
         $leVisiteur = $pdo->getLeVisiteur($idVisiteur);
 
         $urlf = "pdf_documents/". $idVisiteur . "_" . $leMois . ".pdf" ;

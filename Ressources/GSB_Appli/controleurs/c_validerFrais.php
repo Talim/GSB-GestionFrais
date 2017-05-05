@@ -10,16 +10,19 @@ switch ($action) {
 		break;
 	}
 	case 'voirFrais': {
-
 		// Récupération des variables POST
 		$moisConcerne = (isset($_POST["lstMois"])) ? $_POST["lstMois"] : NULL;
 		$numVisiteur = (isset($_POST["lstVisiteurs"])) ? $_POST["lstVisiteurs"] : NULL;
 
+		if ($moisConcerne == null || $numVisiteur == null){
+			header("Location: http://www.example.com/");
+		}
 		// Appel des méthodes nécéssaires
 		$leVisiteur = $pdo->getLeVisiteur($numVisiteur);
 		$lesFraisForfait = $pdo->getLesFraisForfait($numVisiteur, $moisConcerne);
 		$lesFraisHorsForfait = $pdo->getLesFraisHorsForfait($numVisiteur, $moisConcerne);
 		$lesInfosFicheFrais = $pdo->getLesInfosFicheFrais($numVisiteur, $moisConcerne);
+		$nbJustificatifs = $lesInfosFicheFrais['nbJustificatifs'];
 
 		// Importation de la vue associé
 		include('vues/v_afficherValiderFrais.php');
