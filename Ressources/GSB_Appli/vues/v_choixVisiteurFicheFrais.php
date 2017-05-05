@@ -7,20 +7,20 @@
             <div class="form-group">
                 <h4>Choisir un visiteur : </h4>
                 <select id="lstVisiteurs" name="lstVisiteurs" class="form-control">
-                <option value="nothing">---- Selectionner ----</option>
-                <?php
+                    <option value="nothing">---- Selectionner ----</option>
+                    <?php
 
-                // On récupère tous les visiteurs dans la base de données
+                    // On récupère tous les visiteurs dans la base de données
 
-                foreach ($lesVisiteurs as $unVisiteur) {
-                    $idVisiteur = $unVisiteur["id"];
-                    $nom = $unVisiteur["nom"];
-                    $prenom = $unVisiteur["prenom"];
+                    foreach ($lesVisiteurs as $unVisiteur) {
+                        $idVisiteur = $unVisiteur["id"];
+                        $nom = $unVisiteur["nom"];
+                        $prenom = $unVisiteur["prenom"];
+                        ?>
+                        <option value="<?php echo $idVisiteur ?>"><?php echo $nom . " - " . $prenom ?></option>
+                        <?php
+                    }
                     ?>
-                    <option value="<?php echo $idVisiteur ?>"><?php echo $nom . " - " . $prenom ?></option>
-                <?php
-                }
-                ?>
                 </select>
                 <div id="containerMois" style="visibility: hidden">
                     <h4>Sélectionner un mois : </h4>
@@ -28,8 +28,6 @@
                         <!-- AJAX -->
                     </select>
                 </div>
-
-
             </div>
             <input id="ok" type="submit" value="Valider" class="btn btn-success" role="button" />
             <input id="annuler" type="reset" value="Effacer" class="btn btn-danger" role="button" />

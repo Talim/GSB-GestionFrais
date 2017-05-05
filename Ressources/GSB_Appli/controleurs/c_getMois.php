@@ -18,6 +18,7 @@ foreach ($lesMois as $unMois) {
   $lst .= "<option value=" . $mois . ">" . $numMois . "/" . $numAnnee . "</option>";
  }
 
+
 if ($lst != ""){
   echo $lst;
 }
@@ -25,6 +26,4 @@ else{
   $lst = "erreur";
   echo $lst;
 }
-
-
 ?>

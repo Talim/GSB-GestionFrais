@@ -13,8 +13,9 @@ else {
 </div>
 <div class="row">
     <div class="col-md-12">
-      <?php
-        if ($compta){?>
+        <?php
+        if ($compta){
+        ?>
         <div class="panel panel-primary color-compta-border">
             <div class="panel-heading color-compta-back color-compta-border">
                 <h3 class="panel-title">
@@ -25,7 +26,7 @@ else {
                     <div class="col-xs-12 col-md-12 text-center">
                         <a href="index.php?uc=validerFrais&action=selectionnerVisiteur" class="btn btn-success btn-lg" role="button"><span class="glyphicon glyphicon-pencil"></span> <br/>Valider fiche de frais</a>
                         <a href="index.php?uc=suivreFrais&action=selectionnerFiche" class="btn btn-primary btn-lg color-compta-back color-compta-border" role="button"><span class="glyphicon glyphicon-list-alt "></span> <br/>Suivre paiement fiches de frais</a>
-          <?php }
+        <?php }
             else {?>
             <div class="panel panel-primary">
                 <div class="panel-heading ">
