@@ -47,8 +47,6 @@ switch ($action) {
         $leMois = $_SESSION['lstMois'];
       }
 
-      echo("XAAWXAXAX");
-
         $leVisiteur = $pdo->getLeVisiteur($idVisiteur);
 
         $urlf = "pdf_documents/". $idVisiteur . "_" . $leMois . ".pdf" ;
@@ -65,7 +63,8 @@ switch ($action) {
             {
                 $lesFrais[$row][0] = $lesFraisForfait[$row][1];
                 $lesFrais[$row][1] = $lesFraisForfait[$row][2];
-                $lesFrais[$row][2] = $pdo->getLeFraisForfait($lesFraisForfait[$row][0])['montant'];
+                $lesFrais[$row][2] = $pdo->getLeFraisForfait($lesFraisForfait[$row][0])['montant']; //KM
+
             }
 
             for($row = 0; $row < count($lesFraisHorsForfait); $row++)
@@ -75,6 +74,7 @@ switch ($action) {
                 $lesAutresFrais[$row][2] = $lesFraisHorsForfait[$row][5];
             }
 
+            //$frais = array(array("Nuité", 9, 80.00), array("Repas Midi", 12, 29.00), array("Véhicule", 750, 0.67));
 
             $pdf = new PDFGenerator($leVisiteur['nom'], $leVisiteur['prenom'], $leVisiteur['id'], $leMois, $lesFrais, $lesAutresFrais);
             $pdf->generate();
