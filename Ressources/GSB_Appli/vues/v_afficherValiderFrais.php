@@ -5,6 +5,10 @@
       <h2>Validation des frais pour le visiteur :</h2>
       <form class="form-horizontal" action="controleurs/c_finaliserFrais.php" role="form" method="POST">
 
+      <input value="<?php echo $moisConcerne ?>" type="hidden" name="leMois">
+      <input value="<?php echo $numVisiteur ?>" type="hidden" name="leVisiteur">
+
+
         <div class="container">
           <h2>Frais au forfait</h2>
           <div class="panel panel-warning">
@@ -27,8 +31,9 @@
                 <tr>
                   <?php
                   // Récupération des valeurs des frais
+                  $i = 0;
                   foreach ($lesFraisForfait as $unFraisForfait) {
-                    echo "<td><div class=\"input-group\"><input id=\"inp_repasMidi\" type=\"number\" min=\"0\" value=" . intval($unFraisForfait['quantite']) . " class=\"form-control\"><span class=\"input-group-addon\">€</span></td></div>";
+                    echo "<td><div class=\"input-group\"><input name=\"FraisForfait[" . $i++ . "]\" type=\"number\" min=\"0\" value=" . intval($unFraisForfait['quantite']) . " class=\"form-control\"><span class=\"input-group-addon\">€</span></td></div>";
                   }
                   ?>
                 </tr>
@@ -37,17 +42,22 @@
           </div>
         </div>
 
+
+
+
+
+
         <div class="container">
           <h2>Frais Hors forfait</h2>
           <?php 
           // Parcours des lignes hors forfait refusé
+          $j = 0;
           $horsForfaitRefusee = array();
-          $cpt = 0;
           foreach ($lesFraisHorsForfait as $unFraisHorsForfait) {
             $libelle = $unFraisHorsForfait['libelle'];
 
             if (verifierFraisHorsFortaitValide($libelle)){
-              array_push($horsForfaitRefusee, $cpt++);
+              array_push($horsForfaitRefusee, $j++);
             }
           }
           $aucun_HFrais = sizeof($lesFraisHorsForfait) == sizeof($horsForfaitRefusee);
@@ -69,7 +79,7 @@
               <th class='text-center'>Choix</th>
             </tr>  
             <?php 
-            $i = 0;
+            $k = 0;
             foreach ($lesFraisHorsForfait as $unFraisHorsForfait) {
               $libelle = $unFraisHorsForfait['libelle'];
               $idHorsFrais = $unFraisHorsForfait['id'];
@@ -96,13 +106,18 @@
           <?php } ?>
         </div>
 
+
+
+
+
+
         <div class="container">
           <div class="form-groupModif form-group">
 
             <div class="form-groupModif has-warning row">
               <label for="" class="col-sm-2 controlTextModif control-label">Nombre de Justificatifs:</label>
               <div class="col-sm-2">
-                <input id="inp_nbJustificatif" type="number" value="<?php echo intval($nbJustificatifs) ?>" min="0" class="form-control">
+                <input id="inp_nbJustificatif" type="number" value="<?php echo intval($nbJustificatifs) ?>"  name="nbJustif" min="0" class="form-control">
               </div>
             </div>
             <div class="espace"></div>

@@ -184,7 +184,7 @@ class PdoGsb {
      * @param string $mois sous la forme aaaamm
      */
     public function majNbJustificatifs($idVisiteur, $mois, $nbJustificatifs) {
-        $requete_prepare = PdoGB::$monPdo->prepare("UPDATE fichefrais "
+        $requete_prepare = PdoGSB::$monPdo->prepare("UPDATE fichefrais "
                 . "SET nbjustificatifs = :unNbJustificatifs "
                 . "WHERE fichefrais.idvisiteur = :unIdVisiteur "
                 . "AND fichefrais.mois = :unMois");

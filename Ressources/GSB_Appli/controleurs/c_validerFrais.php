@@ -25,6 +25,8 @@ switch ($action) {
 		$lesInfosFicheFrais = $pdo->getLesInfosFicheFrais($numVisiteur, $moisConcerne);
 		$nbJustificatifs = $lesInfosFicheFrais['nbJustificatifs'];
 
+		
+
 		// Importation de la vue associé
 		include('vues/v_afficherValiderFrais.php');
 		break;
