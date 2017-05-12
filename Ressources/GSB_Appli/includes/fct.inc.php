@@ -1,7 +1,6 @@
 ﻿<?php
 /**
  * Fonctions pour l'application GSB
-
  * @package default
  * @author Cheri Bibi
  * @version    1.0
@@ -221,3 +220,9 @@ function conversionDate($leMois){
   $numMois = substr($leMois, 4, 2);
   return $numMois."/".$numAnnee;
 }
+
+
+function verifierFraisHorsFortaitValide($libelle){
+    return (substr($libelle, 0, 10) == "[Refusé] ");
+}
+

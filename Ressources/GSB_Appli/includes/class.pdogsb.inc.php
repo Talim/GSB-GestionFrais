@@ -21,11 +21,13 @@ class PdoGsb {
     // private static $bdd = 'dbname=gsb';
     // private static $user = 'slamgsb';
     // private static $mdp = 'slamgsb2017';
+    // private static $monPdo;
+    // private static $monPdoGsb = null;
 
-    private static $serveur = 'mysql:host=mysql.pod4.sio.lan';
+    private static $serveur = 'mysql:host=localhost';
     private static $bdd = 'dbname=gsb';
-    private static $user = 'slamgsb';
-    private static $mdp = 'slamgsb2017';
+    private static $user = 'root';
+    private static $mdp = 'root';
     private static $monPdo;
     private static $monPdoGsb = null;
 
@@ -410,4 +412,18 @@ class PdoGsb {
         $requete_prepare->execute();
         return $requete_prepare->fetchAll(PDO::FETCH_ASSOC);
       }
+
+    /**
+     * Met à jour la table ligneFraisHorsForfait
+     *
+     * @param int $idFraisHorsForfait
+     * @return void
+     */
+    public function majFraisHorsForfait($idFraisHorsForfait) {
+        $requete_prepare = PdoGSB::$monPdo->prepare("UPDATE lignefraishorsforfait 
+                                                     SET lignefraishorsforfait.libelle = CONCAT('[Refusé] ', lignefraishorsforfait.libelle)
+                                                     WHERE id = :idFrais");
+        $requete_prepare->bindParam(':idFrais', $idFraisHorsForfait, PDO::PARAM_STR);
+        $requete_prepare->execute();
+    }
 }

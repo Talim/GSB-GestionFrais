@@ -10,7 +10,7 @@
         <th>Prenom</th>
         <th>Date</th>
         <th>Montant</th>
-        <th>Fiche de frais</th>
+        <th class="text-center">Fiche de frais</th>
       </thead>
       <tbody>
         <?php
@@ -29,7 +29,7 @@
             <td><?php echo($prenom)?></td>
             <td><?php echo conversionDate($mois)?></td>
             <td><?php echo($montant)?></td>
-             <td>
+             <td class="text-center">
                  <a target="_blank" href="index.php?uc=etatFrais&action=genererPDF&i=<?php echo($idVisiteur) ?>&m=<?php echo($mois) ?>"><button type="button" class="btn"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button></a>
            </td>
 

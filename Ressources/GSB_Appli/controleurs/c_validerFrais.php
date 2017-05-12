@@ -15,9 +15,10 @@ switch ($action) {
 		$numVisiteur = (isset($_POST["lstVisiteurs"])) ? $_POST["lstVisiteurs"] : NULL;
 
 		if ($moisConcerne == null || $numVisiteur == null){
-			header("Location: http://www.example.com/");
+			header("Location: index.php");
 		}
-		// Appel des méthodes nécéssaires
+
+		// Appel des méthodes nécessaires
 		$leVisiteur = $pdo->getLeVisiteur($numVisiteur);
 		$lesFraisForfait = $pdo->getLesFraisForfait($numVisiteur, $moisConcerne);
 		$lesFraisHorsForfait = $pdo->getLesFraisHorsForfait($numVisiteur, $moisConcerne);
