@@ -18,8 +18,6 @@ $estConnecte = estConnecte();
  * Finalisation de la validation de frais
 */
 try {
-	
-
 	if (isset($_POST['leVisiteur']) && isset($_POST['leMois']) && isset($_POST['FraisForfait'])){
 	// Mise à jour des forfaits
 		$leMois = $_POST['leMois'];
@@ -32,32 +30,33 @@ try {
 
 	if (isset($_POST['horsFRefusee'])){
 	// Mise à jour des forfaits
+		$lesFraisForfait_A_Maj = $_POST['horsFRefusee'];
 		foreach ($lesFraisForfait_A_Maj as $unFraisHorsForfait) {
-		// Editer la fiche de frais hors forfait
+			// Editer la fiche de frais hors forfait
 			$pdo->majFraisHorsForfait($unFraisHorsForfait);
-		// Supprimer hors forfait ????
-		// $pdo->supprimerFraisHorsForfait($unFraisHorsForfait);
+			// Supprimer hors forfait ????
+			// $pdo->supprimerFraisHorsForfait($unFraisHorsForfait);
 		}
 	}
 } catch (Exception $e) {
 	echo $e->getMessage();
 }
 ?>
-
-<div class="modal fade" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Validation de fiche de frais</h4>
-      </div>
-      <div class="modal-body">
-        <p>La fiche de frais à été validé et mise à jour avec succès !&hellip;</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" href="index.php" class="btn btn-primary">Continuer</button>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-
+<div class="container">
+	<div class="modal show" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Validation de fiche de frais</h4>
+				</div>
+				<div class="modal-body">
+					<p>La fiche de frais à été validé et mise à jour avec succès !&hellip;</p>
+				</div>
+				<div class="modal-footer">
+					<a href="../index.php"><button type="button" class="btn btn-primary">Continuer</button></a>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+</div>
